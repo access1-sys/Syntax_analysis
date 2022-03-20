@@ -1,0 +1,1412 @@
+Mis- and disinformation  campaigns, for financial or political gains, and sometimes for reasons we are still grappling to  understand, are the order of the day.
+In its extant form, however, the BC model assumes all agents to act responsibly in that they do not  hide their opinions from others in the group, let alone lie about their real opinions to mislead those  others, and that they are open to the information that comes in from the world.
+No one should expect a formal analysis of communication structures, on its own, to suggest an  easy fix of the problems that mis- and disinformation campaigns are causing.
+In Section 3, we present the first extension of the model, featuring different types of agents.
+In this section, we review previous work on the BC model and some of its notable variants, which  collectively serve as a starting point for the present research.
+We also say more about the questions that  motivate our endeavor.
+In Hegselmann and Krause , the agents also receive direct evidence from the world.
+Somewhat more complicated extensions are to be  found in Lorenz, Jacobmeier, and Pluchino, Latora, and Rapisarda .
+Douven and Wenmackers  present an extension that deviates even further from the original  BC model .
+Their extension features agents whose belief states at a given time are characterized by probability functions on a set of self-consistent, mutually exclusive, and  jointly exhaustive hypotheses.
+Douven and Wenmackers use this version of the BC model to unpack  the updating on worldly evidence, which in the original BC model is a black box.
+Their purposes might be served as well if their false assertions make us  retract beliefs we had previously adopted, or keep us from accepting something our evidence would  otherwise have inclined us to believe.
+Assuming an at least minimally rational public, a successful misinformation campaign will automatically  mean a successful disinformation campaign.
+However, for that same reason, a disinformation  campaign will typically have a greater chance of success than a misinformation campaign.
+The former  may be all that is needed to keep tobacco sales at a profitable level; trying to convince the public that  smoking is actually safe may then come at an additional cost with no corresponding return.
+These people may never vote for you, but just to dampen voter turnout for your opponent  may be enough for you to win.
+If so, do the same combinations offer maximum protection  against disinformation campaigns?
+There is at least one straightforward answer to these questions, to wit, set either equal to 0 or  equal to 1, or both.
+The first extension  allows us to model the kind of mis- and disinformation campaigns that motivated the present project,  the second allows us to model possible countermeasures against such campaigns.
+The agents that populated the original BC model will henceforth be called truth-seekers.
+Agents of this new type  do not update in the normal way.
+These agents may not have an agenda, hidden or otherwise, to deflect the  truth-seekers from the truth.
+Whether that is really so is something we hope to determine.
+The formal specification of this bounded confidence with campaigners and free riders .
+To develop an understanding of the impact campaigners can have, we start with the simplest model.
+For the first experiment, we consider a variable number of campaigners, that is, agents who do not attend to any other opinion .
+We might already seem to face a puzzling phenomenon here.
+in the left panel of Figure 2, we see that conversion is more successful with fewer campaigners  present than with more of them present, where one might have expected to find the opposite.
+On  closer inspection, however, the phenomenon is easily understandable.
+And by catching on, these others can also come under the influence of the campaigners and thereby eventually end up believing .
+The single runs  shown in Figure 3, one featuring eight campaigners , the other fifty, illustrate  this phenomenon.
+Figure 4 indicates an answer to the second question.
+It shows, averaged over 100 simulations for  each combination of number of campaigners and value, the number of truth-seekers whose opinion  equals  in the fixed point .
+The results are for three values  of  only, but the trend is manifest.
+This will be a recurring  theme.
+Under  circumstances that are just barely less extreme, truth-seekers, while massively lured away from the  truth, are still enough in touch with the world to not become misinformed.
+More exactly, we reran three times the simulations whose results are visualized in Figure 4, once  with 10 free riders added, once with 25, and once with 50.
+To further clarify the results: the yellow slivers in Figure 5 indicate combinations of parameter settings for which truth-seekers that tend to arrive at the truth in the fixed point when no free riders are  present are diverted from the truth in the fixed point when free riders are present.
+And we see that free riders starting with an opinion below 0.5 rapidly come to side with the truth-seekers, who all end up believing the truth, not held back by any of the free riders.
+Before turning to that question, however, we want to briefly mention a variation of the above simulations that we will not  explore in any depth here, but that interested readers may want to investigate using the code in the  Supplementary Materials.
+Instead, one could consider a setup in which the total numbers of agents truthseekers is kept constant, and in which we go through all combinations  of numbers of the three types of agents yielding that constant.
+The question about conversion  could then be asked for each of those  combinations.
+This figure is a so-called ternary plot.
+The figure reveals a somewhat intricate pattern.
+We compare four different situations featuring communities of agents who interact  according to the BC model extended to incorporate campaigners, and who receive input from the  world.
+To answer these questions, we ran 1000 simulations for each of the four communities and measured in  each simulation the total inaccuracy .
+Remarkably, campaigners, at least in the case at hand,  compromise the accuracy of their truth-seeking community members the most if they are subtle.
+At first blush, one might expect greater extremism on the part of the campaigners to do more damage to  the truth-seekers, in which case the fact that the extremists did not significantly affect the accuracy of  the truth-seekers at all may come as a surprise.
+This is only an example, but the finding that campaigners are damaging only if they are subtle is quite  robust, holding across a range of combinations of parameter settings.
+That being subtle is, under a broad range of conditions, the  better strategy from the campaigners  perspective is a finding we encountered before, and later on we  shall encounter it again.
+Example 3.2 We saw that, for the conversion rate, the number of free riders present did not seem to  matter much.
+Thus, consider four communities, all of which contain 50 truth-seekers and 15 campaigners, but the first of which contains only those agents, the second contains also 10 free riders, the third 25 free  riders, and the fourth 50.
+Moreover, the following parameter settings hold in all of them.
+We are measuring again the total sum of squared errors over 50 updates,running 1000 simulations per community.
+Moreover, adjusting our BCI may be a defense mechanism against the efforts of the campaigners  to convert us to their opinion or at least divert us from the truth.
+After all, campaigners will not let  anyone influence their opinion, so they effectively have an of 0.
+Being in the neighborhood of such  people may make us more selective as regards deeming others worthy of influencing our opinion.
+The goal must  be to find the right level of caution.
+The left plot in Figure 11 shows the results for  running the standard BC model till a fixed point is reached.
+We consider right away communities made up of all three types of agents: truth-seekers, who also  attend to incoming evidence; campaigners, who stick to one and the same opinion from the start.
+If we imagine that the campaigners are trying to lure away from the truth as many of the others  as possible, then we see that they are entirely successful in the situation depicted in the left panel of  Figure 12, in which CD is absent: literally no one ends up believing the truth.
+Moreover, the free riders are not even close to  in  this situation.
+If the latter are meaning to run a misinformation campaign, then they fail completely in  the first situation but at least partly succeed in the second.
+A comparison between Figures 13 and 14 suggests a positive answer.
+Figures 13 and 14 show  that they need not concern themselves much with how many free riders or campaigners there are in their community; these numbers do not appear to matter a whole lot.
+These results bear on disinformation campaigns.
+For free riders, the picture can look very different, in that, depending on the parameter setting , CD can have a big impact, but not necessarily a positive one.
+In none of the examples did we implement CD.
+Figure 16 shows the results from running 1,000 simulations for each community and measuring  the SSEs, so that the average starting BCI size of the truthseekers  is the same as the BCI size of the truth-seekers in Example 3.1.
+Just as, in reality, BCIs will not be the same for all agents  and from one time step to the next, the weight agents give to their peers  opinions will also not be the  same for all of them, nor remain unchanged through time.
+There is a vast psychological literature on  the so-called conformity bias.
+In this model, for truth-seekers, their peers influence their new opinion, their BCI, and also the weight  they are going to give to the social part of updating at the next update.
+But we want a model with full confidence dynamics to allow for a bit more flexibility, by giving  agents some control over how fast their values for  and change under the influence of their peers.
+To achieve this, we only need to adapt the above model minimally.
+We could then also raise again the questions that were raised in the above, notably, questions concerning conversion  and accuracy.
+We mention it because it served as a template for the more involved simulations we  ran that do bear on the question of what social damage is done by campaigners and free riders.
+Each of these simulations started with randomly choosing values for  and  from the unit interval.
+Each of  the aforementioned values was chosen from the unit interval, randomly and independently.
+In each simulation, the agents updated 50 times, and we registered the sum of squared errors of each of the  truth-seekers.
+To find out, we fitted a linear model to the simulation  results per combination of number of campaigners and number of free riders and registered the coefficients for all three independent variables together with the associated p values.
+A second limitation concerns the fact that, in our extensions as in the original BC model, agents adopt information coming from the world in a black box fashion, meaning that this part of the actual  updating mechanism remains unspecified.
+But to investigate this systematically one would need to unpack the  updating mechanism of the extended BC model with typed agents in the way Douven and Wenmackers  unpacked the updating mechanism of the original BC model.
+The aforementioned limitations already suggest two obvious avenues for future research.
+What were called truth-seekers by us were the epistemically responsible agents, while what we called  campaigners were the epistemically irresponsible ones.
+Note, however, that a radical gestalt switch is possible here: Equations BC, BCC and BCCF are uninterpreted formulas, which get empirical  content by dint of an interpretation that implicitly or explicitly was given in the explanation of  the formulas.
+But we could interpret the central equations  quite differently.
+The conspirators do not reveal their real opinion.
+And the innocents  simply average over all opinions within their confidence interval.
+The basic equations allow for all these interpretations.
+Moreover, in the Appendix we explain how interested readers can, without much effort, explore  whichever part of parameter space may be of special relevance to their own projects.
+This, too, is left as a future project.
+Rule-based and example-based contrastive explanations are two  exemplary explanation styles.
+This can be explained by the fact  that both explanation styles only provide details relevant for a single decision, not the  underlying rational or causality.
+The same holds for humans  interacting with decision support systems  that allow DSS to generate explanations.
+As explanations fulfilla user need, explanations generated by a DSS need to be  evaluated among these users.
+This can provide valuable insights into user requirements and effects.
+Contrastive explanations  in the context of a DSS are those that answer questions as Why this advice instead of that advice?
+These explanations  help users to understand and pinpoint information that caused the system to give one advice over the other.
+In two separate experiments, we evaluated two contrastive explanation styles.
+The dose is highly personal and context dependent, and an incorrect dose can cause the patient short or long term harm.
+This use case was selected for two  reasons.
+Secondly, this use case was both understandable and motivating for healthy  participants without any experience with DMT1.
+Because DMT1 patients would have potentially confounding experience  with insulin administration or certain biases, we recruited healthy participants that imagined themselves in the situation  of a DMT1 patient.
+This required an understanding of when the DSSs advice would be  correct and incorrect and how it would behave in novel situations.
+First we discuss the background and shortcomings of current XAI user evaluations.
+Furthermore, we provide examples on how rule-basedand example-based explanations are currently used in XAI.
+Next, we illustrate our own recommendations by explaining the use case  in more detail and offering the theory behind our hypotheses.
+The following two sections discuss the current state of user evaluations in XAI and rule-basedand example-based contrastive explanations.
+A major goal of Explainable Artificial Intelligence is to have AI-systems construct explanations for their own output.
+Common purposes of these explanations are to increase system understanding, improve behavior predictability  and calibrate system trust  .
+Other purposes include support in system debugging , verification and  justification .
+The systematic literature review  by X shows that 97% of the 62 reviewed articles underline that explanations serve a user need but 41% did not evaluate  their explanations with such users.
+A third survey by X discusses an explicit issue with user evaluations in XAI.
+To do so in a valid way, several recommendations are given.
+First, the application level of the study context should be  made clear; either a real, simplified or generic application.
+Examples include the average human level of expertise targeted, and whether the explanation should  address the entire system or a single output.
+Finally, the explanations and their effects should be clearly stated together  with a discussion of the studys limitations.
+Without such an investigation, these subjective results only provide information on the users  beliefs and opinions, but not on actual gained understanding, trust or task performance.
+Some studies, however, do perform  objective measurements.
+This allowed the authors to differentiate between behavioral and self-perceived effects of an explanation, underlining the value of performing objective measurements.
+The above described critical view on XAI user evaluations is related to the concepts of construct validity and reliability.
+These two concepts provide clear standards to scientifically sound user evaluations.
+The construct validity of an  evaluation is its accuracy in measuring the intended constructs .
+Examples of how validity may  be harmed is a poor design, ill defined constructs or arbitrarily selected measurements.
+In the social sciences, a common condition for results to be generalized to other cases  and to infer causal relations is that a user evaluation is both valid and reliable.
+This question  implies a contrast, as the person asking this question often has an explicit contrasting foil in mind.
+Humans use contrastive explanations to explain events in a concise and specific manner .
+Within the context of a DSS advising an insulin dose for DMT1 self-management, a contrastive  rule-based explanation could be: Currently the temperature is below 10 degrees and a lower insulin dose is advised.
+If the  temperature was above 30 degrees, a normal insulin dose would have been advised.
+Two months ago, when it was 31 degrees, a normal dose was advised instead, which  proved to be correct for that situation.
+Such example or instance-based explanations are often used between humans, as they illustrate past behavior and allow for generalizationto new situations .
+Research on system explanations using rules and examples is not new.
+Most of the existing research focused on exploring  how users preferred a system would reason, by rules or through examples.
+Our main contribution is a thorough evaluation of rule-based and example-based contrastive explanations.
+We  believe that this hinders the creation and replication of XAI user evaluations and their results.
+We provide three practical recommendations to clarify the evaluated constructs and their relations.
+Constructs form the basis of the scientific theory underlying XAI methods and user evaluations.
+A concrete and visual way to do so is through a Causal Diagram which presents the expected causal  relations between constructs .
+Clearly stating hypotheses allows other researchers to critically reflect on the underlying theory assumed,  proved or falsified with the evaluation.
+It offers insight in how constructs are assumed to be related and how the results  support or contradict these relations.
+The former provides construct definitions whereas  the latter two provide theories of human-human and human-computer explanations.
+The second set of recommendations regards the experimental context, including the use case.
+The use case determines  the task, the participants that can and should be used, the mode of the interaction, the communication that takes place and  the information available to the user .
+These factors can interfere in an exploratory study such as ours, in which the findings  are not domain specific.
+Our final recommendation related to the context considers the experimental setting and surroundings, as these may affect the quality and generalizability of the results.
+An online setting may provide a large quantity of readily available  participants, but the results are often of ambiguous quality.
+This allows for valuable interaction with participants while reducing potential confounds that threaten the evaluations reliability and validity.
+We recommend their usage for objectively measuring constructs such as understanding and task performance.
+Importantly however, such measures often only measure one aspect of behavior.
+In this way, a complete perspective on a construct can be  obtained.
+When participants are not aware of the evaluations purpose, their responses may be more genuine.
+Biases can regard the participants overall  perspective on AI, the use case, decision-making or similar.
+One way to mitigate these biases is to design how the explanation are presented, the explanation  form, in an iterative manner with expert reviews and pilots.
+For our study we designed the explanations iteratively and  verified that the chosen form for each explanation type did not differ significantly in the perception of the participants.
+Our use case is that of assisting patients with diabetes mellitus type 1   with personalized insulin advice.
+DMT1 is a chronic autoimmune disorder in which glucose homeostasis is disturbed and  intake of the hormone insulin is required to balance glucose levels.
+Therefore, personalized advice systems can be a promising tool in DMT1 management to improve quality of life  and mitigate long-term health risks.
+The factors that were used in the evaluation are realistic, and were based on Bosch and an  interview with a DMT1 patient.
+This study therefore falls under the human grounded  evaluation category of Doshi-Velez and Kim: a simplified task of a real-world application.
+The advice is binary , whereas in reality one would expect either a specific dose or a range of suggested doses.
+This simplification allowed  us to evaluate with novice users, as we could limit our explanation to the effects of a too low or too high  dosage without going into detail about effects of specific doses.
+Furthermore, this prevented the unnecessary complication  of having multiple potential foils for our contrastive explanations.
+The second  simplification was that the explanations were not generated using a specific XAI method, but designed by the researchers  instead.
+Several design iterations were conducted based on feedback from XAI researchers and interaction designers to  remove potential design choices in the explanation form that could cause one explanation to be favored over another.
+The user evaluation focused on three constructs: system understanding, persuasive power, and task performance.
+The persuasive power of an explanation was  also measured, as an explanation might cause over-trust in a user; believing that the system is correct while it is not,  without having a proper system understanding.
+Our  hypotheses are visualized in a Causal Diagram depicted in Fig.2.
+Contrastive rule-basedexplanations  explicate the systems decision boundary between fact and foil and we expected the participants to recall and apply this information.
+Second, we expected that contrastive example-based explanations persuade participants to follow the advice more  often.
+We believe that examples raise confidence in the correctness of an advice as they illustrate past good performance  of the system.
+Whereas this effect was expected to be positive for system understanding, persuasive power was expected to affect  task performance negatively in case a systems advice is not always correct.
+This follows the argumentation that persuasive  explanations can cause harm as they may convince users to over-trust a system.
+The construct of understanding was measured with two behavioral measurements and one self-reported measurement.
+The first behavioral measurement assessed the participants capacity to correctly identify the decisive factorof the situations  in the systems advice.
+Second, we measured the participants ability to accurately predict the advicein  novel situations.
+This tested whether the participant obtained a mental model of the system that was sufficiently accurate  enough to predict its behavior in novel situations.
+The self-reported measurement tested the participants perceived system  understanding.
+Persuasive power of the systems advice was measured with one behavioral measurement, namely the number of times  participants copied the advice, independent of its correctness.
+If participants that received an explanation followed the advice  more often than participants without an explanation, we addressed this to the persuasiveness of the explanation.
+Task performance was measured as the number of correct decisions, a behavioral measurement, and perception of predicting  advice correctness, a self-reported measurement.
+We assumed a system that did not have a 100% accurate performance,  meaning that it also made incorrect decisions.
+Therefore, the number of correct decisions made by the participant while  aided by the system could be used to measure task performance.
+The self-reported measure allowed us to measure how  well participants believed they could predict the correctness of the system advice.
+The second,  perceived system accuracy, measured how accurate the participant thought the system was.
+The combination of self-reported and behavioral measurements enabled us to draw relations between our observations  and a participants own perception.
+Finally, by measuring a single construct with different measurements we could identify and potentially overcome biases and other weaknesses in our measurements.
+In this section we describe the operationalization of our user evaluation in two separate experiments in the context  of DSS advice in DMT1 self-management .
+Age and education level were inquired to identify whether the population sample was  sufficiently broad.
+Participants were questioned on DMT1 knowledge to assess if DMT1 was sufficiently introduced and  to check our assumption that participants had no additional domain knowledge.
+Several trials followed to conduct the behavioral measurements.
+Participants filled out a usability questionnaire to identify potential interface related confounds.
+This block served only to familiarize the participant with the systems  advice and its explanation and to learn when and why a certain advice was given.
+Each description was followed by the question what advice the participant thought the system would give.
+These items formed the measurement of perceived system understanding.
+The questions  were asked without mentioning the term explanation and simply addressedsystem output.
+The amount of eight items was  deemed necessary, to obtain a measurement less dependent on the formulation of one item.
+Fig.5 provides an overview of the learning and testing blocks of this experiment.
+In the experimental groups, the situation was  followed by an advice and explanation.
+Next, the participant was asked to make a decision on the insulin dose.
+After this  point, the learning block differed from the learning block in the first experiment: the participants decision was followed  with feedback on its correctness.
+The testing block contained 30 trials, also presented in random order, in which a presented situation was followed by  the systems advice and explanation.
+Next, participants had to choose which insulin dose was correct based on the systems  advice, explanation and gained knowledge of when the system is incorrect.
+Persuasive power was operationalized as the  number of times a participant followed the advice, independent of whether it was correct or not.
+Task performance was represented by the number of times a correct decision was made.
+The former reflected how persuasive the advice and  explanation was, even when participants experienced system errors.
+The latter reflected how well participants were able to  understand when the system makes errors and compensate accordingly in their decision.
+Also in this experiment, a self-reported measurement with eight 7-point Likert scale questions was performed.
+It measured the participants subjective sense of their ability to estimate when the system was correct.
+Participants were recruited from a participant  database at TNO Soesterberg  buildings and on social media.
+Both samples aimed to represent the entire Dutch population and as such the entire range of potential DMT1 patients, hence the wide age and educational  ranges.
+The inclusion criteria were as follows: not diabetic, no close relatives or friends with diabetes, and no extensive knowledge of diabetes through work or education.
+General criteria were Dutch native speaking, good or corrected eyesight, and  basic experience using computers.
+These inclusion criteria were verified in the pre-questionnaire.
+After careful inspection of their answers, none were excluded because their answers  on diabetes questions in the pre-questionnaire were not more accurate or elaborate than others.
+Statistical tests were conducted using SPSS Statistics 22.
+The data from the behavioral measures in Experiment Iwere analyzed using a one-way Multivariate Analysis of Variance as independent variable and the number of times the advice was copiedas dependent variable.
+The second ANOVA also had explanation style as independent variable, but the number of correct decisionsas dependent  variable.
+Explanation style was the  independent and the mean rating on the questionnaire the dependent variable.
+This was measured with two behavioral measures and one self-reported  measure.
+Fig.6 shows the results on the two behavioral measures: correct advice prediction in novel situations and correct identification of the systems decisive factor.
+Some caution is needed in interpreting these results, as this lack of significant correlations  shows a potential lack of statistical power.
+This was measured with one behavioral  and one self-reported measurement.
+A  one way ANOVA showed no significant differences .
+One outlier from the rule-based explanation group was found, its removal did not  affect the analysis.
+A correlation analysis was performed between the self-reported prediction of advice correctness and the behavioral  measurement of making the correct decision, two measurements of task performance.
+Both  outliers from each measurement were removed in this analysis and did not affect the significance.
+The questionnaire contained five questions on a 100 point scale about readability,  organizationof information, language, images and color.
+Fig.12 shows the mean ratings for each question, broken down by  explanation style .No statistical analysis was performed, as this questionnaire  only functioned as a check for potential usability confounds in the experiment.
+Common positive descriptions included clear, well-arranged, clear and simple icons and understandable language.
+This was to validate any potential overly positive or negative trust bias towards the system.
+In Experiment II the systems accuracy was 66.7%.
+After the experiment, brief discussions with participants revealed additional perspectives.
+One participant expressed a need for  knowing the systems rules governing the systems advice.
+In the two explanation groups, participants experienced the  explanations as useful.
+However,  in the two explanation groups several participants found it unclear what the highlight of a factor meant.
+Several  participants also mentioned that, although useful, the explanations lacked a causal rationale.
+Experiment Imeasured the participants capacity to understand how and when the system provided a specific advice.
+This construct was operationalized in three measurements: decisive factor identification, advice predictionand perceived system  understanding.
+We hypothesized that participants receiving contrastive rule-based explanations would score best on all three  measurements.
+The results from our evaluation support these hypotheses in part.
+First, rule-based explanations indeed seem to allow participants to more accurately identify the factor from a situation that was decisive in the systems advice.
+However, rule-basednor example-based explanation allowed participants to learn to predict system behavior.
+The example-based explanations only showed a small and insignificant increase in perceived system understanding.
+The first reason  might be because the described DMT1 situations and accompanying system advice was too intuitive.
+The second reason we inferred from open discussions with participants after the experiment.
+Most participants who  received either explanation style mentioned difficulty in applying and generalizing the knowledge from the explanations to  novel situations.
+Several participants even expressed the desire to know the rationale of why a certain rule or behavior  occurred.
+Also, such explanations seem  to provide the user with the perception that  measures that accurately and reliably measure the intended construct.
+The persuasive power of an explanation was operationalized with the number  of times the advice was copied.
+Task performance was represented by the number of correct decisionsand the self-reported prediction of advice correctness.
+However, these effects were marginal and not significant.
+These two simplifications prevent us to generalize the results and to apply our conclusions to construct  an actual system for aiding DMT1 patients in self-management.
+In Experiment II however, participants  tended to slightly overestimate the systems actual performance.
+This occurred independent of the explanation style.
+This may have affected the  self-reported results.
+Also,  both testing blocks were relatively long, which could have caused participants to continue learning about the system while  we were measuring their understanding.
+We did not perform any analyses on this, as it would add another level of complexity to the design.
+Practical recommendations were given for XAI  researchers unfamiliar with user evaluations.
+These addressed the evaluations constructs and their relations, the selection  of a use case and the experimental context, and suitable measurements to operationalize the constructs in the evaluation.
+These recommendations originated from our experience designing an extensive user evaluation.
+However, both explanation styles  did cause participants to follow the systems advice more often, even when this advice was incorrect.
+Finally, during the design and analysis of  this user evaluation we discovered a need for validated and reliable measurements.
+This paper presents a bidirectional search algorithm that dynamically improves the bounds  during its execution.
+This paper presents a BHS algorithm, Dynamically Improved Bounds Bidirectional Search , that improves upon previous BHS algorithms.
+One shortcoming of BHPA is that some nodes may be expanded twice, once in each direction.
+While this was an important theoretical advance, computational results continued to be disappointing.
+We prove that DIBBS, like BS*, never expands a node in both directions.
+Loosely speaking, DIBBS terminates on or before the two searches meet .
+They developed a BHS algorithm that dynamically improves the bounds provided by the heuristics during the search.
+The first, Max-BS*, uses the improved bounds as the priority function in one of the search directions, but not the other.
+It does not use the improved bounds for pruning.
+First, we show how to refine and improve the dynamic bounds.
+First,Adding a weak heuristic to a bidirectional bruteforce search cannot prevent it from expanding additional nodes.
+We demonstrate computationally that DIBBS can overcome their second conclusion and their conjecture.
+Holte filled the void by developing the MM algorithm that is guaranteed to meet in the middle.
+Sharon modified MM to create MM, which exploits knowledge about the smallest cost of an edge.
+See X for a recent survey of bidirectional heuristic search.
+Eckerle began investigating the minimum number of nodes that must be expanded.
+They extended the assumptions from undirectional heuristic search to define Deterministic, Expansion-based, Black Box  bidirectional algorithms.
+Chen continued this vein of research by proving that the minimum number of node expansions for a DXBB BHS algorithm can be determined by finding a Minimum Vertex Cover  in an auxiliary bipartite graph called GMX.
+They proved that NBS will never expand more than twice the number of nodes as the size of a MVC of GMX and that no DXBB BHS algorithm can provide a stronger guarantee than this.
+Shaham constructed an efficient algorithm for finding an MVC of GMX.
+They also created Fractional MM , which allows flexibility in choosing the meeting point of the forward and backward searches.
+Shaham extend the theory regarding the minimum number of node expansions to the case where the cost of the smallest edge is known and constructed the Meet at the Threshold  algorithm that controls the meeting point of the forward and backward search via a threshold parameter.
+Furthermore, DIBBS assumes that the heuristics are consistent, whereas DXBB algorithms do not.
+Front-to-front evaluations dynamically improve the bounds, but at a very high  computational cost.
+DIBBS dynamically improves the bounds with very little additional  computational cost.
+This paper only addresses front-to-end BHS algorithms.
+This paper provides more  mathematically rigorous proofs of the correctness of the algorithm, a proof that no node  is expanded twice, a more careful analysis of which nodes will not be expanded, and more  computational testing, including a computational investigation of the minimum number of  nodes that must be expanded.
+An asterisk is used on functions to distinguish an optimal value of the function from a possible suboptimal value along some arbitrary path.
+The following example will be used throughout the paper to illustrate the  denitions and concepts.
+This section presents the bidirectional algorithm and its properties.
+It conducts two searches: a forward search starting from s and  a backward search starting from t: It maintains a closed and open set of nodes in both  directions.
+Closed nodes are the ones that have already been expanded.
+At each iteration,  a decision is made whether to expand a node in the forward direction or the backward  direction.
+DIBBS is  exible in how that decision is made.
+One possible criteria will be  presented below.
+Once a direction has been selected, an open node in that direction that  has the smallest value of the priority function is chosen to be expanded.
+Before the next iteration is performed, a termination  criteria is checked.
+DIBBS' termination criteria diers in two respects from many other  BHS algorithms.
+First, some other algorithms do not terminate until one of the open sets  is empty.
+DIBBS can be terminated while both open sets are nonempty.
+Second, DIBBS  uses fd in its termination criterion.
+One further dierence is that DIBBS requires consistent  heuristics.
+DIBBS requires several data structures to be effciently implemented.
+Our implementation uses two heaps, one for the forward direction and  one for the backward direction, to choose the next node to be expanded.
+It stores all the  nodes generated in an unordered list and uses a hash table to determine if a given node is in that list.
+One other minor dierence between the two algorithms is that BAE* switches  directions every iteration.
+We now prove the correctness of DIBBS.
+Several of the properties are only stated and  proved for the forward search.
+This section presents computational experiments with DIBBS on the pancake problem, the  sliding tile puzzle, and on the topspin problem.
+Note that Sadhukhan  only reported  results for BAE* for the sliding tile puzzle.
+DIBBS can overcome Barker and Korf's second conclusion that with a strong heuristic,  BHS will expand more nodes than a unidirectional heuristic search.
+DIBBS is capable of solving certain problems while expanding fewer nodes than the  theoretical minimum for DXBB BHS algorithms.
+The prefix reversal sorting problem is to find the minimum number of reversals needed to sort the sequence into increasing order.
+Helmert , by ignoring the gaps involving the X smallest pancakes.
+We  use GAP-1, GAP-2, and GAP-3 to demonstrate how DIBBS performs when given a weaker  heuristic.
+An entry of DNR indicates that we did not run the  algorithm because it was estimated that very few of the instances would complete before  running out of memory.
+For each row, the fewest number of  node expansions is in bold.
+The sliding tile puzzle has been extensively used as a test problem for heuristic search algorithms,  both unidirectional and bidirectional.
+This section presents computational results  for the 15-puzzle on the 100 instances created by Korf  using the Manhattan heuristic.
+FA* and BA* required too much  memory to be solved, so results for IDA* are reported instead.
+The table also includes  NBS, DVCBSF;and DVCBSA; since results for these algorithms on the 15-puzzle have been  published.
+The results presented in Table 3 clearly demonstrate that DIBBS dominates the other  algorithms.
+This single pattern  database was used N times, once for postions , MM; GBFHS, and DIBBS contain the average number  of nodes expanded by each of these algorithms.
+For these experiments, the direction for each iteration of DIBBS was chosen using  the cardinality rule with f-leveling.
+This indicates that for DXBB  algorithms, the best strategy when GAP-0 or GAP-1 is used is to only expand nodes in one  direction, unidirectional dominates bidirectional search.
+This is in keeping with Barker and Korf's conclusion, With a strong heuristic, a bidirectional heuristic search expands  more nodes than a unidirectional heuristic search.
+For the weaker heuristics, GAP-2 and GAP-3, Table 5 shows that jMVCj and  jMVCj are significantly smaller than Min(FA*,BA*), indicating that unidirectional search  no longer is the best strategy for DXBB algorithms.
+Examining the last column in Table 5 reveals that when GAP-0 is used, only about 26%  of the total eort is needed to verify the optimality, whereas about 74% is needed to find  the optimal path.
+This indicates that the optimal path was found relatively late during the  search.
+For GAP-1, GAP-2, and GAP-3, the opposite occurs; most of the total eort is  needed to verify optimality.
+This indicates that the optimal path is found relatively early  during the search, but many more nodes must be expanded to verify the optimality of the  path.
+This indicates that unidirectional  search dominates DXBB bidirectional search algorithms when the stronger heuristics are  used.
+To illustrate this point,  suppose the graph has a uniform branching factor of b, all edges have unit cost, and  heuristics are not used.
+Consequently, the bidirectional search  is exponentially faster than the unidirectional search.
+DIBBS also achieves the long sought goal of replacing one larger search by two smaller  searches.
+The results for the topspin problem are somewhat dierent.
+The approach taken by MM and GBFHS is quite  dierent than the approach taken by DIBBS.
+MM and GBFHS accomplish this goal by  controlling where the two searches meet, whereas DIBBS does not control where the  searches meet but uses dynamically improved bounds to reduce the size of the search.
+The results discussed in the previous paragraph, especially for the extremely strong  GAP-0 heuristic, convincingly demonstrate that DIBBS can overcome Barker and  Korf's second conclusion that with a strong heuristic, BHS will expand more nodes  than a unidirectional heuristic search.
+DIBBS achieves this by dynamically improving  the bounds, or stated more generally, by using information from one search direction  to aid the other direction.
+Their analysis implicitly assumed that such sharing of  information would not happen.
+For some such  problems, the easier direction might always be the same.
+In such a case, one would choose to use FA*  over BA*.
+Bidirectional search has the advantage that it can use information as  the algorithm proceeds to determine which direction is easier and then place greater  emphasis on that direction.
+In this case, finding the  optimal path sooner is a realtively small component of the overall success of DIBBS  over FA* and BA*.
+Hence, finding the optimal path  sooner is a relatively small component of the overall success of DIBBS over IDA*.
+For the topspin problem, especially for the stronger heuristics, Tables 4 and 7 show that  finding the optimal path sooner is a large component of the overall success of DIBBS  over FA* and BA*.
+For these problems, DIBBS actually requires slightly more node  expansions to verify optimality than Min, but requires significantly fewer  node expansions to find and verify optimality.
+DIBBS uses dynamically improved bounds to avoid expanding nodes with  min and to terminate the algorithm sooner.
+Iris recognition has been well studied with the objective to assign class label of each iris image to a unique subject.
+Iris recognition has become a hot research topic driven by its wide applications in national ID card, border control, banking, etc.
+Iris is a ring-shaped region of human eye with rich texture information under near infrared illumination.
+The only difference is the definition of class labels at macro or micro scale.
+For recognition, the class label is the identity of a person .
+Iris texture naturally has unique pattern for each subject so we can extract the individually specific features to distinguish different subjects.
+The visual appearance of human iris is a complex texture pattern.
+Iris images naturally exhibit random texture patterns and we usually use the detailed image features for iris recognition.
+Therefore, the iris features for classification should exhibit both similarity and dissimilarity for interclass iris  images.
+For iris images from a same category, the iris features should be clustered closely even these iris images are captured from different subjects.
+For iris images from different categories, the iris features should be separated at a distance.
+Work on iris image classification is driven by specific application of iris biometrics.
+Attack at iris sensor level with forged iris patterns printed on contact lens or paper is a straightforward risk for iris biometrics.
+This approach needs special design of iris sensors.
+The texture features useful for iris liveness detection include gray level co-occurrence matrix , statistical distribution of iris texture primitives , local binary patterns and weighted-LBP.
+Therefore, we argue that human iris is a biometric  trait  with  both  phenotypic  and genotypic features, which is a fundamental assumption enabling iris texture based race classification.
+Recently we borrowed the ideas of object recognition such as Bag-of-Words model with well optimized codebook for racial iris image classification.
+And Lyle used Local Binary Patterns of periocular biometrics for gender and race classification.
+Then, a query iris image is the most promising to be identifind using the templates from its corresponding category.
+Mehrotra used energy based histogram of multi-resolution DCT transformation to group iris images.
+Sunder investigated iris macro-features  for iris retrieval and matching.
+So that research efforts in separated problems can be unifind together and advanced solutions to iris image classification will be motivated with the guidance of such a framework.
+The HVC combines Vocabulary Tree and Locality-constrained Linear Coding to achieve a hierarchical and sparse representation of visual vocabulary.
+Our study on HVC based race classification demonstrates the genotypic nature of iris texture.
+However, the success of iris image classification does not contradict the fact of accurate individual authentication.
+Iris image classification and iris recognition are two different concepts and use texture features at different scales to represent iris pattern.
+Iris texture at a macro scale can reveal the similarity between iris images but the detailed minute iris features can successfully discriminate individuals.
+An iris image database with four types of fake iris patterns  namely CASIA-Iris-Fake is developed in this paper.
+The publication of CASIA-Iris-Fake will definitely advance the development of unifind countermeasures against iris spoof attacks.
+segmentation of the valid iris texture regions from the original iris images and normalization of the ring-shape iris regions into a unifind coordinate system.
+Since the focus of this paper is iris image classifination, the iris image preprocessing method in X is adopted.
+Firstly, the gradient  information  encoded  in  SIFT  provides a generic description of local regions for all iris images.
+Therefore we argue that SIFT is well-suited for low feature extraction in iris image classification.
+The SIFT descriptors are densely extracted from the normalized iris images.
+So that the individual difference of detailed iris texture can be tolerated and the global texture representation is discriminative enough to distinguish iris images of different categories.
+Therefore our focus is to develop a novel visual codebook adaptive to the iris texture characteristics.
+The  basic  idea of VT is to hierarchically represent a large set of representative visual words through recursive applications of K-means clustering.
+LLC is an effective visual coding scheme which utilizes the locality constraints to project each descriptor into its local-coordinate system with low computational complexity.
+Each description vector is propagated down the tree by codes allocation in selected candidate codes at each level.
+The solution of the coding in the i-th level is derived analytically by.
+The proposed HVC model has both efficiency and robustness advantages during the code book learning phase.
+Firstly,the hierarchical K-means classify all features into a small number of classes, and then classify the subset of features belonging to each class into a small number of classes in the next level clustering.
+The hierarchical strategy can learn codes from multi-scales.
+Secondly, the hierarchical K-means clustering shows robustness in clustering tasks.
+These important visual codes with low probability of occurrence may be ignored by the traditional K-means clustering.
+The proposed HVC method achieves small quantization error owning to the dependency between codes in a down path through the vocabulary tree and sparse coding strategy.
+It can capture salient pattern of local descriptors by local constrained and parents constrained coding in each level.
+The HVC method avoids accumulating errors  from  root  level and provides possibility to correct the quantization errors at lower levels by adopting the feature reconstruction strategy for coding.
+Max pooling of HVC coding results for all image patches can achieve a powerful statistical feature representation of an iris image.
+However, histogram representation of HVC features is a description  of  orderless  patch-based  visual  features so it loses spatial information.
+Except the first level coding, the coding process just uses the children nodes of k codes with the largest projections in the upper level as the candidate codebook.
+It reduces the dependence on upper level coding, and quantization errors can be corrected at the later level coding process.
+To demonstrate the effectiveness of the proposed iris image classification framework, three typical applications, i.e.
+To the best of our knowledge, the Notre Dame Cosmetic Contact Lenses 2013 is the largest one.
+This dataset contains iris images  of subjects without contact lenses, with soft contact lenses, and with cosmetic contact lenses, acquired using an LG 4000 iris sensor.
+Although ND-Contact is a good database for research of iris liveness detection, it only has one type of fake iris images, i.e.
+The Synth subset contains fake iris images artificially synthesized from fake iris images with cosmetic contact lens pattern.
+The UPOL iris database  contains high-quality iris images with abundant and clear iris texture.
+So one image of each class is randomly chosen and printed on paper using the Fuji Xerox C1110 printer as the counterfeit input of iris recognition systems.
+each printed iris pattern to construct the Print dataset.
+There are totally 640 images in this dataset.
+Cosmetic contact lens are popular currently so we collected 57 kinds of cosmetic contact lens with different texture patterns.
+There are totally 74 left and right eyes wearing these contact lens.
+Five fake iris images are captured from each eye to construct the Contact dataset  shows some examples.
+Ten fake iris image are captured per sample.
+Therefore there are totally 400 fake iris images in the Plastic dataset.
+Various intra-class variations  shows some examples.
+We use the same device to capture 6000 genuine iris images from 1, 000 subjects as the positive samples in the experiments of iris liveness detection.
+Thirdly, the robustness and generalization capability of machine learning based iris liveness detection methods  are  evaluated  on the CASIA-Iris-Fake when the training and testing datasets contain different types of fake iris images.
+We use 600 fake and 600 genuine iris images as positive and negative training samples, and others for testing.
+The ROC curves and the Correct Classification Rate  with Matlab2011 as the programming software.
+Thirdly, the proposed HVC is the best performing BoW model for iris liveness detection.
+a training set of 3,000 images including 2,000 genuine samples and 1,000 fake samples and a testing set including 800 genuine samples and 400 fake samples.
+This observation reminds us include all kinds of fake iris patterns for training.
+The other is to update the training data of fake iris patterns online, just like the update of virus database in anti-virus software.
+And a good start point is the research of classifying subjects with significant racial distinction, which is a well defined pattern classification problem.
+In our experiments, almost all Asian subjects are Chinese and all non-Asian subjects are white people living in Europe or USA.
+So the ground truth of class label is clearly defined in our research.
+The CASIA multi-race iris image database .
+ND-CrossSensor-Iris-2013 Dataset is a large iris image database in the literature and it has race label information for each image.
+So we need to select a subset from it namely ND multi-race iris image database for our research of racial iris image classification.
+To establish a benchmark for research and comparison of new race classification methods, the IDs of all ND, Clarkson and CASIA iris images selected for the experiment are listed in the document .
+We have mentioned in Section 2.2 that SIFT is a suitable low level feature descriptor for iris image classification.
+Therefore the iris biometrics must be a genotypic biometric trait.
+This conclusion remind us to use high-quality iris devices to capture clear and detailed iris texture for race classification.
+The high accuracy of racial iris image classification achieved in long-range iris recognition applications  demonstrates the possibility to predict the racial category of a subject at a distance.
+The results on this database again prove that HVC is the best performing visual representation method for iris image classification.
+As we know, iris indexing is a classification task without ground truth category labels.
+We adopt an automatic clustering strategy which uses K-means clustering to partition iris images into several categories.
+The process of iris indexing includes training and testing phases.
+The training phase learns the hierarchical visual code-book, clusters iris images and trains classificrs.
+The testing phase uses the learned classifier to classify a query iris into one category.
+The linear SVM classifier  is adopted.
+Section 5.2 gives an example experiment.
+The  Ordinal  Measures and HVC features are extracted, and iris image grouping and SVM classificr for coarse classification are learned for the registration database.
+Iris images are grouped into 9 and 10 categories respectively to show our strategy.
+So that the computational cost of feature extraction and matching for multiple iris image classification tasks can be greatly reduced.
+Our previous work demonstrated the effectiveness of statistical texture analysis for iris image classification.
+This paper aims to learn and encode the most effective texture primitives of iris images for classification.
+Each code characterizes a kind of frequently appearing local patches in iris images.
+The codebook of HVC is organized in a tree structure and the relationship between different visual codes is preserved.
+In this sense, the research of iris liveness detection will never stop since the attack approaches are dynamically updated.
+Second, we introduce novel dynamic consistency and alignment measures, which underline the remarkable stability of patterns of visual search among subjects.
+The level of annotation varies, spanning a degree of detail from global image or video labels to bounding boxes or precise segmentations of objects .
+This is, we argue, one of the first demonstrations of a successful symbiosis of computer vision and human vision technology, within the context of a very challenging dynamic visual recognition  task.
+It shows the potential of interest point operators learnt from human fixations for computer vision.
+This naturally suggests that human fixations could provide  useful information to support automatic action recognition systems.
+In section 6 we introduce our action recognition pipeline which we shall use through the remainder of the paper.
+Research on inter-subject agreement for static stimuli  has shown remarkable inter-observer consistency in the free-viewing condition.
+One of the oldest theories of visual attention has been that bottom-up features guide vision towards locations of high saliency.
+Models of saliency can be either prespecified or learned from eye tracking data.
+In the former category falls the basic saliency model  provides an alternative criterion for building saliency maps.
+These can be learned from low-level features or from a combination of low, mid and high-level ones.
+Comparatively little attention has been devoted to computational models of saliency maps for the dynamic domain.
+All these models are prespecified.
+One exception is the work of Kienzle , who train an interest point detector using fixation data collected from human subjects in a free viewing  task.
+Datasets containing human gaze pattern annotations of images have emerged from studies carried out by the human and computer vision communities, some of which are publicly available and some that are not .
+In a parallel line of work, Vig  have  also collected eye movements for the Hollywood-2 dataset in the free-viewing condition and performed computer-based action recognition using ground truth fixations,  assuming  the  availability  of eye movement data at test time.
+Here, we introduce data captured under three conditions: free viewing , action recognition and context recognition, for two video datasets, Hollywood-2 and UCF Sports .
+While visual saliency models can be evaluated in isolation under a variety of measures against human fixations, for computer vision, their ultimate test remains the demonstration of relevance within an end-to-end automatic visual recognition pipeline.
+While such integrated systems are still in their infancy, promising demonstrations have recently emerged for computer vision tasks like scene classification, verifying correlations with object  detection responses .
+An interesting early biologically inspired recognition system was presented by Kienzle, who learn a fixation operator from human eye movements collected under video free-viewing, then learn action classification models for the KTH dataset with promising results.
+Currently the most successful systems remain the ones dominated by complex features extracted at interesting locations, bagged and fused using advanced kernel combination techniques.
+It contains 12 classes: answering phone, driving a car, eating, fighting, getting out of a car, shaking hands, hugging, kissing, running, sitting down, sitting up and standing up.
+The data set is split into a training set of 823 sequences and a test set of 884 sequences.
+There is no overlap between the 33 movies in the training set and the 36 movies in the test set.
+The UCF Sports Action Dataset: This high  resolution dataset  was collected mostly from broadcast television channels.
+It contains 150 videos covering 9 sports action classes: diving, golf swinging, kicking, lifting, horseback riding, running, skateboarding, swinging and  walking.
+Participants in  the  action  recognition  group  were not required to solve any specific task while being presented with the video sequences in the two datasets.
+Eye movements were recorded using an SMI iView X HiSpeed 1250 tower-mounted eye tracker, with a sampling frequency of 500Hz.
+The head of the subject was placed on a chin-rest located at 60 cm from the display.
+Viewing conditions were binocular and gaze data was collected from the right eye of the participant.
+The subject had  to  follow  a  target  that  was  placed  sequentially  at   13 locations evenly distributed across the  screen.
+Accuracy of the calibration was then validated at 4 of these calibrated locations.
+If the validation error exceeded 0.75 of visual angle, the data acquired during the block was deemed noisy and discarded from further analysis.
+Because the resolution varies across the  datasets,  each  video  was  rescaled  to  fit the  screen,  preserving  the  original  aspect  ratio.
+During data acquisition, the eye movement and video  streams were synchronized automatically by the eyetracking system.
+To facilitate this process, video files were optimized for the display setup, using the functionality provided by the SMI Experiment Center software.
+Before each video sequence was shown, participants were required to fixate the center of the screen.
+Participants in the action and context recognition groups had to identify the actions and, respectively, the contextual elements in each video sequence.
+Their multiple choice answers were recorded through a set of check-boxes displayed at the end of each video, which the subject manipulated using a mouse.2 Partici- pants in the free viewing group underwent a similar protocol, the only difference being that the questionnaire answering step was skipped.
+To avoid fatigue, we split the set of stimuli into 20 sessions , with 5-minute breaks between blocks.
+Overall, it took approximately 1 hour for a participant to complete one session.
+The video sequences were shown to each subject in a different random  order.
+The analysis reveals, apart from near-perfect performance, the types of errors humans are prone to make.
+The most frequent human errors are omissions of one of the actions co-occurring in a video.
+False positives are much less frequent.
+The third type of error of mislabeling a video entirely, almost never happens, and when it does it usually involves semantically related actions, e.g.
+We generalize this protocol for video, by randomly choosing frames from our videos and checking inter-subject correlation on them.
+We average score over all test subjects defines the final consistency metric.
+This value ranges from 0.5 when no consistency or bias effects are present in the data and when all subjects fixate the same pixel and there is no measurement noise.
+Unlike in the procedure followed in X, who considered several fixations per subject for each  exposed  image,  we only consider the single fixation, if any, that a subject made on that frame.
+In our experiment, we  set  the  width  of  the  Gaussian  blur  kernel  to  match a visual angle span of 1.5.
+We draw 1,000 samples for both the same-stimulus and different stimulus predictions.
+For the Hollywood-2 dataset, the AUC score is 94.8% for inter-subject agreement and 72.3% for cross-stimulus control.
+For UCF Sports, we obtain values of 93.2% and 69.2%.
+We first describe our procedure for comparing the visual patterns of two groups of subjects.
+We then apply this procedure to compare the action recognition condition against free viewing and context recognition conditions, and discuss our  findings.
+Let us consider two tasks, A and B.
+Given a set of subjects that are required to solve task A, we can build a saliency map for task A for each video frame.
+Let us consider a set SA of nA subjects for task condition A, and a set SB of nB subjects for task condition B.
+We employ an independent two sample t-test with unequal variances to test this hypothesis .
+We  place a significance threshold  of 0.05 on the resulting p-values.
+In our experiments, we apply the above protocol to compare the action recognition condition against the context recognition and free viewing conditions, for both Hollywood-2 and UCF Sports.
+Since in the Hollywood-2 dataset several actions can occur in a video, either simultaneously or sequentially, this rules out initial habituation effects and further neglect  to some degree.
+A more recent investigation by Borji and Itti also supports the hypothesis that task can be successfully decoded from eye movements, in line with Yarbus' findings.
+Our static inter-subject agreement analysis shows that the spatial distribution of fixations in video is highly consistent across subjects.
+There are relatively few commonly agreed metrics that are sensitive to fixation order.
+In this section, we introduce methods that automatically discover AOIs in dynamic image sequences .
+We use these methods to define two metrics that are sensitive to the temporal ordering among fixations and evaluate consistency under these metrics.
+We first model the scanpath made by each subject as a sequence of discrete symbols and show how this representation can be produced automatically.
+Human fixations tend to be tightly clustered spatially at one or more locations in the image.
+Each fixation gets assigned a label.
+For subject 2 shown in the example, this results in the sequence [bumper, windshield, driver, mirror, driver, handbag].
+Defining areas of interest manually is labour intensive, especially in the video domain.
+For robustness, we allow  for  a  temporal gap  during  the  track  building  process.
+We note however that the dynamics of the stimulus places constraints on the sampling process.
+First, a random string must obey the time ordering relations among AOIs .
+To remove some of the  resulting  bias  from  our evaluation, we extend each AOI both forward and backwards  in time, until the image patch at its center has undergone significant appearance changes, and use these extended AOIs when generating our random baselines.
+We notice similar gaps in the UCF Sports dataset.
+These results indicate a high degree of consistency in human eye movement dynamics across the two datasets.
+In this section, we investigate this by building vocabularies over image patches collected from the locations fixated by our subjects when viewing videos of the various actions in the Hollywood-2 dataset.
+we illustrate image patches  that  have been assigned high probability by the mixture of Gaussians model underlying k-means.
+Each row contains the top 5 most probable patches from a cluster , otherwise preferring to center  the  object,  or one of its features, onto their fovea.
+The visual information found in the fixated regions could potentially aid automated recognition of human actions.
+Then, under the assumption that fixations are  available at  testing  time,  we  define  two   interest   point  operators that fire at the centers of fixation, one spatially on  a frame by frame basis  and  one  at  a  spatio-temporal  scale.
+We start our experiment by running the spatio-temporal Harris corner detector over each video in the dataset.
+Assuming an angular radius of 1.5  for the human fovea , we estimate the probability that a corner will be fixated by the fraction of interest points that fall onto the fovea of at least one human observer.
+The first operator generates, for each human fixation, one 2D interest point at the foveated position during the lifetime of the fixation.
+The  second  operator, generates one 3D interest point for each fixation, with  the  temporal scale proportional to the length of the fixation.
+We  run the Harris operator and the two fixation operators though our classification pipeline .
+The probability that a spatio-temporal Harris corner will be fixated by a subject is approximately 6%, with little variability across actions .
+Although our findings suggest that the entire foveated area is not informative, this does not rule out the hypothesis that relevant information for action recognition might lie in a subregion of this area.
+Along these  lines,  we  design  an experiment in which we generate finer-scaled interest points in the area fixated by the  subjects.
+Given  enough  samples,  we expect to also represent the area to which the covert attention of a human subject was directed at any particular moment through the fixation.
+To drive this sampling process, we derive a saliency map from human fixations.
+The map estimates the probability for each  spatio-temporal  location  in  the  video to be foveated by a human subject.
+We find that ground truth saliency sampling outperforms both the Harris and the uniform sampling operators significantly, at equal interest point sparsity rates.
+Up to this point, we have relied on the availability of ground truth saliency maps at test time.
+Motivated by the findings presented in the previous section, we now show that we can effectively predict saliency maps.
+We start by introducing two evaluation measures for saliency prediction.
+Motivated by the findings presented in the previous section, we now show that we can effectively predict saliency maps.
+We start by introducing two evaluation measures for saliency prediction.
+In the pipeline we proposed in 7.2, ground truth saliency maps  drive  the  random  sampling  process  of  our     interest point operator.
+We introduce the spatial  Kullback-Leibler   divergence  measure  to  compare   the   predicted and the ground truth saliencies, because it better reflects the saliency map similarity under a probabilistic interpretation.
+Our analysis includes features derived directly from low, mid and  high level image information.
+The most commonly used measure for evaluating saliency maps in the image domain, the AUC measure, interprets saliency maps as predictors for separating fixated pixels from the rest.
+The ROC curve is computed for each image and the average area the area under the curve over the whole set of testing images gives the final score.
+This measure emphasizes the capacity of a saliency map to rank pixels higher when they are fixated then when they are not.
+A better suited way to compare probability distributions is the spatial Kullback-Leibler  divergence, which we propose as our second evaluation measure, defined as.
+Having established evaluation criteria, we now run several saliency map predictors on our dataset, which we describe  below.
+We also provide three baselines for saliency map comparison.
+The  first  one  is  the  uniform  saliency  map, that assigns the same fixation  probability  to  each  pixel of the video frame.
+Second, we consider the center bias  feature, which assigns each pixel with the distance to the center of the frame, regardless of its visual contents.
+This feature can capture both the tendency of human subjects to fixate near the center of the screen and the preference of the photographer to center objects into the field of view.
+When evaluated under the AUC metric, combining predictors always improves performance.
+Note however that central bias is not the best feature for saliency prediction under the KL divergence measure and is clearly not a good interest point sampling distribution for visual recognition in an end-to-end   system.
+Moreover, the HoG-MBH detector, trained using our eye movement data is the best predictor of visual saliency from our candidate set, under the probabilistic measure of matching the spatial distribution of human  fixations.
+We next investigate action recognition performance when interest points are sampled from the saliency maps predicted by our HoG-MBH detector, which we choose because it best approximates the ground truth saliency map spatially, under the KL divergence metric.
+Experimental Protocol: We first run our HoG-MBH detector over the entire Hollywood-2 data set and obtain our automatic saliency maps.
+We then configure our recognition pipeline with an interest point operator that samples locations using these saliency maps as probability distributions.
+We also run the pipeline of  and combine the four kernel matrices produced in the final stage of their classifier with the ones we obtain for our 14 descriptors, sampled from the saliency maps, using MKL.
+We also test our recognition pipeline on the UCF Sports dataset, which is substantially different in terms of action classes, scene clutter, shooting conditions and the evaluation procedure.
+Unlike Hollywood-2, this database provides no training and test sets, and classifiers are generally evaluated by cross-validation.
+We follow the standard procedure by first extending the dataset with horizontally flipped versions of each video.
+For each cross-validation fold, we leave out one original video and its flipped version and train a multi-class classifier.
+We test on the original video, but not its flipped version.
+We compute the confusion matrix and report the average accuracy over all classes.
+Our experimental procedure for the UCF Sports dataset closely follows the one we use for Hollywood-2.
+We retrain our HoG-MBH detector on a subset of 50 video pairs, while we use the rest of 100 pairs for testing.
+The average precision of our detector is 92.5% for the training set and 93.1% on our test set, which confirms that our detector does not overfit the data.
+We use the retrained detector to  run the same pipelines and baselines as for Hollywood-2.
+Hence, they will be well approximated by a detector trained in a bottom-up manner.
+Our interest point operators are defined by randomly sampling specific spatio-temporal distributions.
+This process can stochastically influence the number of relevant and noisy image samples supplied to the classifier both during training and testing, and indirectly affect classification performance.
+We train and evaluate each classification pipeline 10 times, each time using a different random seed for interest point sampling.
+We then compute the mean and standard deviation of the performance metric .
+This evaluation procedure is however computationally prohibitive.
+The vocabulary learning and multiple kernel learning phases are the most computationally expensive.
+We therefore run this experiment using a lightweight version of our pipeline architecture.
+This method explicitly maps the input features into a high dimensional space by computing the matrix logarithm of the covariance matrix of the descriptors in each video, followed by a power scaling step.
+We then concatenate the  resulting  descriptors and apply a linear SVM, and hence avoid the expensive multiple kernel learning phase.
+The lightweight O2P pipelines are much faster, taking approximately 60 hours when run on the same architecture, yet almost as accurate as our bag-of- words pipelines.
+Besides the collection of large datasets, we have performed quantitative analysis and introduced  novel  models  for  evaluating  both  the  static and the dynamic consistency of human fixations across different subjects, videos and actions.
+We have also performed a large scale analysis of automatic visual saliency models and end-to-end automatic visual action recognition systems.
+Finally, we show that such automatic saliency predictors can be used within end-to-end computer visual action recognition systems to achieve state of the art results in some of the hardest benchmarks in the field.
+However, by using robust optimization these effects can be minimized and device yield can be significantly improved.
+The optimality of the robust solutions is confirmed by simulating it on the expensive physical model as a post-processing step.
+However, such probability data is usually classified and is not disclosed by foundries to external designers.
+In this case, designers often only know the tolerances of the fabrication process.
+In other words, the bounds on the fabrication uncertainties are known, but their distribution is unknown.
+Robust optimization involves finding the best worst-case performance.
+The design found using this method is therefore not insensitive, but has a certain guaranteed minimum performance.
+To determine the robust optimum, an iterative optimization process is required.
+An additional challenge in integrated photonic optimization is that the underlying electromagnetic simulation may be computationally expensive.
+Repeatedly changing the design parameters and rerunning the simulation to find the optimal design can therefore be prohibitively costly.
+Amongst the available methods for mathematical modeling, Kriging is a strong candidate since it provides an estimator for the approximation error.
+Research has been performed on finding tolerant designs for different integrated photonic devices.
+An efficient and scalable approach for robust optimization of integrated photonic systems is still lacking.
+For device level problems, space-mapping is a generic approach for deterministic and nondeterministic optimization of electromagnetic problems.
+Applications of this approach for optimization of integrated photonic components have also been presented X.
+In this work, we propose a system level robust optimization technique for efficiently identifying robust designs for serial ring resonator-based optical filters.
+The major restriction is that the structure of the system should be such, that the behavior of the components is independent from one another.
+This change can affect the response of components in the direct vicinity of this local variation in index.
+In the strict sense, a neighboring component no longer remains independent in this scenario.
+Kriging metamodels of the directional coupler sections of the resonators are constructed since simulating the directional coupler is computationally expensive.
+Systems with multiple identical components are especially strong candidates since a single metamodel can then replace the components.
+These pre-built models only need to be refined for each specific case.
+However, the application of the proposed algorithm for robust optimization of other such integrated photonic systems requires further investigation.
+1 shows an illustration of a second-order serial ring resonator.
+The serial ring resonators are simulated using a single stripe TripleX waveguide   with designed thickness of 32 nm.
+A very small thickness of 32 nm has been chosen for the waveguide since the directional couplers are extremely sensitive to variation at this thickness.
+This means that if the nominal performance is optimized then even slight variations in the geometry can cause the designed device to not operate as expected.
+The design variables of the problem are the gaps, g1 to gn between the n directional couplers, the width of the waveguides and the length L of the directional couplers.
+The width range is chosen such that the waveguide always remains single mode.
+Both simulations require approximately 10 minutes.
+The fidelity of the beat length L simulated via the mode solver was independently verified by simulating a directional coupler with different coupling lengths using the coupled mode theory model.
+The two different simulated beat length values showed strong correspondence.
+We construct metamodels of the expensive components, response of PL0 and L , given the design variables and the parametric uncertainties.
+This convergence requires improvement of the cheap system response by adding more data points from the expensive simulation in strategically important regions until an initially specified budget for total simulations is exhausted.
+In what follows, we expand upon the robust optimization method and the proposed approach for adaptively improving the system response.
+Kriging is an interpolation technique with a statistical basis  .
+The  figure  also  shows  the  predicted interpolation error, s2 , given by the solid blue line.
+The interpolation error is zero at the sample points and increases as the distance between the sample points increases.
+Jones devised such a method for adaptively improving the metamodel in regions of interest for optimization.
+The authors extended efficient global optimization   approach suggested by Jones.
+A system level robust expected improvement criterion was derived which enabled iterative sampling of the expensive components such that the system robust optimum was found efficiently.
+Similarly, for the third order resonator, g4 = g1 and g3 = g2 .
+For robust optimization both the cases, one assuming symmetry and another without symmetry of the gaps, were considered.
+The approximate response is generated by applying scattering matrix analysis on the power coupling ratio for each directional coupler found via the component metamodels for PL0.
+The initial locations are chosen via Latin Hypercube sampling , a type of Design of Experiments.
+Since L is a system level design variable, it does not have to be sampled.
+This means the method can run for 60 iterations, since three such simulations are run at each iteration for the three different gaps g1 , g2 and g3 .
+That directional coupler response can be reused for all the directional couplers in the system since all the couplers share the same design variables and uncertainties domain.
+The order of the resonator can therefore be increased arbitrarily without incurring high computational costs.
+This scalability at low cost is one of the primary attractions of the system based approach described in this work.
+The last two columns give the numerical performance at the nominal and the worst-case location for the
+second and third order nominal and robust optimal solutions.
+If higher order filters were robustly optimized, the best worst-case filter performance could further improve.
+Note that the same cannot be said for the deterministic optimum.
+In this example, the robust design showed a lower nominal performance, but a significantly better worst-case performance.
+In practice, this would translate into substantially higher yields on optical filters optimized for robustness.
+Inrecent years, 3D video technology has matured along with intensified research on all stages of the processing chain from 3D video capture to the display technology.
+Regarding the first category, an important milestone was the multiview video coding extension of the X Video  Coding    standard.
+Here, the multiview video  representation format is used, showing the same scene from two or more different perspectives.
+By enhancing MVV with the associated depth signal, a  new class of 3D video solutions  is enabled: via depth image-based rendering , perspectively correct virtual camera views of the scene can be synthesized for arbitrary view positions.
+One key aspect for the success of such applications is efficient compression and transmission of MVD data.
+Morvan proposed platelet-based coding of depth maps.
+Liu  propose  a  trilateral  filter  together  with a sparse dyadic mode for depth intra coding.
+The latter combines rectangular and diagonal block partitions with an inter-component predicted contour refinement.
+Oh and Ho   proposed inter-component prediction for motion vectors using the motion vectors of the corresponding video block also for the depth block.
+Winken propose inter-component prediction for motion vectors by inheriting motion and block partitioning from video to depth.
+As an extension of multiview HEVC, they report about 10% reduction in the depth bit rate.
+Our previous work on depth intra coding introduced wedgelet block segmentation with residual adaptation in X and inter-component prediction of wedgelet and contour segmentations in X, reporting about 11% and 6% reduction for the depth bit rate, respectively.
+In Section II, the two basic types of geometric depth models are introduced, namely, plane fitting for areas with a planar characteristic and wedgelet and contour segmentations for sharp edges.
+Following this principle, a full intra-coding solution for depth is developed.
+The basic principle of this depth signal modeling approach is  approximation  of  the  signal  of  a  rectangular  block  by  a linear model that describes a plane.
+The most commonly used distortion metric for this is the mean squared error (MSE), such that the leastsquares linear regression method derives the linear model with the minimum MSE.
+The  information  required for such a model consists of two elements: the segmentation information, specifying the region each sample belongs to, and the region value information, specifying a constant value for each region.
+In the following, we introduce signal modeling with segmentations of type wedgelet and contour in more detail.
+Like in X, this approach utilizes arbitrary contours as a special type of non-rectangular block segmentation.
+Fig.3 shows the contour segmentation with partitions  P1 and P2 and the contour signal model with segment values d1 and d2, respectively.
+We employ such contour models for approximating the signal of a given depth block of X.
+Thresholding is known from digital image processing as a very simple image segmentation approach, extracting two arbitrarily shaped regions from a grayscale image, separating bright from dark areas.
+Here, subimages correspond to depth blocks of size N  N  and bright and dark image regions to depth values d(u,v) of foreground and background objects, respectively.
+Accordingly,  the information or parameters describing the model need  to  be available for reconstruction at the  decoder.
+The prediction modes can be grouped into those for homogeneous regions  and those for directional structures .
+Our plane coding method is purely predictive  , such that no additional information has to be signaled in the bitstream.
+To realize an efficient coding mode, two main requirements have to be considered: One is the cost for signaling the segmentation to the decoder and the other the computational complexity of encoder estimation and decoder reconstruction.
+Here, the signal approximation can be improved by additional refinement information, which is estimated at the encoder and signaled in the bitstream.
+At the decoder, the signal of the block is reconstructed by combining the predicted segmentation with the transmitted refinement information.
+For depth intra pictures with inter-component prediction, the video slice represents an intra base layer and the depth slice represents an intra enhancement layer.
+Thus, the information of the video reference picture has to be transmitted before the depth picture.
+The reference for predicting the segmentation is the luminance signal of the co-located block in the decoded video picture.
+7 shows the layers and dependencies of our basic 3D-HEVC framework with three original camera views.
+3D-HEVC contains several additional and modified block-level tools for improving the coding performance.
+The most important one is VSO, a distortion metric for multiview depth coding that relates distortions in the depth directly to the overall synthesized view distortion.
+The reference framework for the integration of our depth intra-coding approach is the above-described 3D-HEVC codec, but without the two  depth intra-coding tools referred  to as DMM and SDC , which methodically overlap with parts of our BSM and COR approaches and were originally included in 3D-HEVC as part of our 3D video standardization proposal.
+Merkle,Farin, and Sarkis resented approaches for extracting the surface mesh from depth or disparity images for different applications.
+Rendering such an extremely large number of triangles for every frame causes complexity problems in 3D computer graphics applications; however, by removing redundant information, the number of vertices can be reduced without introducing additional distortions.
+Contour blocks require more vertices depending on the shape of the segmentation, however, delimited by the characteristic that all vertices of each segment are coplanar.
+8 shows mesh extraction for the different GDI types, with vertices as blue dots and connectivity as blue lines.
+For evaluating the impact of our depth coding approach on mesh extraction, we apply the following method: in the case of GDI, the set of vertices is compiled from the geometry model parameters within the decoding process as described above.
+From the resulting set of vertices for all blocks of a picture, the number of triangles T can be calculated with (1).
+In this section, the experimental results are reported and analyzed.
+As usually done for intracoding tools, we additionally test an all-intra coding structure, where neither temporal prediction nor inter-view prediction is enabled.
+Regarding the test data sets, two groups of sequences must be distinguished for depth coding, namely, those with high quality depth maps and those with lower quality depth maps.
+To identify and analyze all effects of GDI, two reference methods are selected: one is full 3D-HEVC with all tools and the other is the 3D-HEVC implementation reference, namely, 3D-HEVC without two overlapping depth coding tools.
+However, as highlighted by the sequence-specific results in Fig.
+For the group with high-quality depth, noticeable gains are achieved with VSO off and only marginal  losses with VSO on.
+10 shows the corresponding rate-distortion   curves for one representative sequence  of each group.
+11 shows the distortion of synthesized and original views relative to the view position.
+12 shows examples of the subjective quality, comparing the amount and type of artifacts of 3DR and GDI by highlighting large distortions.
+Here, motion and disparity-compensated prediction together with TQR results in rather smoothly changing signals and, consequently, a higher number of triangles for the surface mesh.
+The sequence-specific results in Fig.
+For better understanding the impact of our depth intra-coding approach, this section presents additional statistical results.
+Table III shows the relative runtimes of our experiments.
+The main reason for the increase in  decoder complexity is  the minimum distortion search of optimum wedgelet segmentations for inter-component prediction,  even  with  the fast search strategy we apply.
+Note that the level of optimization regarding implementation complexity is of course much higher for the 3D-HEVC reference codec than for our implementation.
+14 shows the depth intra mode distribution: for 3DR about two-thirds of the samples are covered by angular mode blocks, followed by Planar and DC modes.
+Regarding the residual coding, Table IV shows the portion of samples covered by depth intra blocks with a non-zero residual signal, with TQR and COR values transmitted  in the bitstream, respectively.
+This means that the vertices of the surface mesh can be directly derived within the decoding process from the geometry-based signal model parameters and constant offset residual values.
+Weight imprinting   was  recently  introduced  as  a  way to perform gradient descent-free few-shot  learning.
+Deep learning   has achieved remarkable results on a wide range of difficult problems  , from an image and video analysis to natural language processing and visual questioning answering.
+This led to the development of embedded neural network accelerators, specifically designed to accelerate only the inference process, e.g., edge TPUs.
+Therefore, the models should be able to draw connections and generalize their knowledge to new novel classes using only a few labeled examples, usually acquired during their interaction with the world.
+Among them, weight imprinting was recently proposed as a way for performing gradient descent-free few-shot learning  .
+WI allows for directly expanding the set of categories which a neural network can recognize by directly imprinting a new weight vector in  the  last layer of the network, without requiring backpropagating through the network.
+WI, despite its immediate adoption, suffers from many limitations.
+First, it assumes that  the  distribution  of  the  new  categories  will be unimodal.
+This assumption  is  mostly  true  for  the  distribution of classes presented to the network during the training process.
+However, this is not always the case for novel categories for which the network has not been optimized  .
+WI does not provide any efficient mechanism for detecting if adding a new category will negatively impact the existing ones.
+Finally, the impact of the scaling factor c was not thoroughly discussed in X.
+We experimentally found out that the initial value of c can significantly affect the behavior of the model  in  some cases.
+For smaller initial values of c, the embeddings tend to gather closely around  the  class prototypes, while for larger initial values  of c, the embedding vectors are spread around each class prototype wi .
+Therefore, we observe that the embeddings that maintained a larger variance around the prototypes allowed for performing better WI later on.
+These observations hint to a direct connection between maintaining the variance of the embeddings around the prototypes and the generalization abilities of a representation/model on unknown classes.
+Furthermore, the proposed hypersphere-based formulation also provides a straightforward way to discover multimodal classes: the embedding vectors extracted for  a novel category are clustered, and the distance between the cluster centroids is measured.
+If we detect centroids that are at a distance greater than r from each  other,  then  a  hypersphere  with a  radius of r cannot enclose the embeddings of the novel class.
+To address this, we can simply add one or more prototypes to model the distribution of the novel class.
+In this way, one class can be represented using more than one prototype.
+The proposed approach for handling multimodal novel classes, abbreviated as "HWI-M," was also evaluated using an additional multimodal  split of  the MNIST data set.
+Again,  note that the proposed variance-preserving variant of HWI greatly outperforms the HWIvariant.
+At the same time, the proposed method was capable of overcoming significant limitations of WI by being able to learn regularized representations that provide better generalization for classes that were not seen during the training and provides a straightforward way to directly handle novel categories with multimodal distributions.
+The proposed method was extensively evaluated on three image data sets, outperforming the regular WI approach.
+However, the most exiting model can only work in one imaging modality without transferable capability.
+In this article, we propose the multitask learning method with the reverse inferring for estimating multitype cardiac indices in MRI and CT.
+Different from the existing forward inferring methods, our method builds a reverse mapping network that maps the multitype cardiac indices to cardiac images.
+The task dependencies are then learned and shared to multitask learning networks using an adversarial training approach.
+Then, the fine-tuned network was run on an independent data set with 2360 cardiac CT images.
+The results of all the experiments conducted on the proposed adversarial reverse mapping show excellent performance in estimating multitype cardiac indices.
+Multittype cardiac indices estimation faces two challenges.
+These indices have considerably different dimensions.
+This diagnostic capability has attracted considerable attention because these MRI and CT techniques allow angiography to be performed noninvasively.
+In such circumstances, knowledge transfer from CT to MRI is necessary to obtain a better clinical evaluation.
+However, these assumptions are not always accurate or suited to all tasks.
+Second, existing multitask learning methods cannot efficiently transfer the task dependencies learned to other modalities.
+This is because most existing multitask learning methods only mine the relationships among tasks but lack a mechanism for sharing the learned knowledge between different image modalities, especially for complex task dependencies.
+The proposed method investigates multitask learning and the knowledge transfer problem from the perspective of a reverse generation that further learns the mapping from multitype cardiac indices to cardiac images via an adversarial training  approach.
+This  is loosely inspired by the recent progress of reverse mapping and adversarial training , which shows the promising ability for modeling the data distribution, especially for assessing joint distributions of complex  semantic  variables .
+Finally, the parameters from the two networks learned from the source modality  are shared with the target modality .
+This network reveals the role of each cardiac index and the dependencies among different cardiac indices from a generational perspective.
+Thus, the reverse mapping network can act as a regularization enabling the multitask network to learn task dependencies.
+We propose a symmetric adversarial training for realizing the regularization of the reverse network to the multitask learning network.
+Learning occurs in this adversarial training, and the joint distribution from the reverse mapping network and the multitask network are matched.
+The convexity of the matching problem  is then proven, which indicates that the reverse mapping network can effectively constrain the learning of the multitask network.
+Furthermore, we propose a bidirectional parameter sharing scheme that shares the parameters learned from both the multitask learning network and the reverse mapping network to facilitate training on different modalities.
+Finally, our comprehensive experiments show promising results on estimating multitype cardiac indices from MRI and CT, which validates the feasibility of our adversarial reverse mapping-based multitask learning framework.
+Existing segmentation-based method, Max Flow, initially performs cardiac segmentation and then computes other cardiac indices from the cardiac segmentation results.
+However,  cardiac segmentation is still  a challenge.
+Other model-based methods include the multivariate mixture model for cardiac segmentation from multisequence MRI and the statistical shape  modelbased methods.
+Recently, deep neural networks have demonstrated powerful capability for cardiac image segmentation.
+Patravali used a 2-D CNN to implement slice-by-slice segmentation and a  3-D CNN  for 2D T MRI.
+Poudel and Alayba combined a 2-D CNN and recurrent neural network to segment cardiac structures from 3-D MR images.
+Ahmed also used a CNN to segment cardiac structures from CT images.
+Therefore, our method provides more information more efficiently.
+Most two-phase methods usually extract a feature representation and then employ a regression model to achieve the final estimation.
+Regression models include artificial neural networks , random forests ,K-cluster regression forests , and deep regression networks .
+Xue  proposed a framework of joint representation and regression learning for extracting task-aware features.
+Several other studies have also modeled the dependencies among different tasks and obtained promising results.
+It has two models: one model that translates English into French and a reverse model that translates French into English.
+A representative study is X, which first predicts segmentation and tags via a multitask network and then regenerates original images from the predicted results via a reverse mapping network.
+Our proposed method uses a multitask learning  framework with a reverse mapping network that reconstructs the image from learned features and multitype cardiac  indices , an adversarial training approach to solve multitask learning , and a bidirectional parameter sharing mechanism.
+Notably, we first inference a shared feature representation to predict multitype cardiac indices.
+In this case, we treat the discriminator network as a binary classification subtask in the multitask learning framework.
+We then explicitly learn the multitask relation.
+When inaccurate indices are predicted from a cardiac image, the reverse network would also generate an inaccurate cardiac image.
+In this section, we propose a new transfer learning scheme, a bidirectional parameter sharing scheme that transfers the learned parameters from deep layers in both the multitask learning network and the reverse mapping network learned from MRI.
+We improved a dense convolutional network to fit our multitask learning network, which has one convolution layer and three dense blocks with four,eight,and eight layers.
+Our model takes 2-D cardiac image slices across one cardiac cycle as input.
+For the first convolution layer, we use three different sizes with convolution kernel to generate hierarchical information for further learning.
+For the rest of the 3-D convolution layers in dense blocks, we use a kernel.
+Then, we can obtain a feature map (z) output using the third dense block.
+Furthermore, the feature map z is also output by a branch fea.
+Notably, the outputs of Mdcnn and Mfc correspond to the 2-D segmentation and 1-D cardiac indices, respectively, in 2-D slices across one cardiac cycle.
+Structure of the Reverse Mapping Network: Our reverse mapping network has a similar but reverse structure of the multitask learning network.
+It regenerates corresponding cardiac images from the given multitype cardiac indices.
+Finally, we reconstruct final cardiac images using deconvolution layers.
+The entire model  is first trained on the MRI data using the adversarial training approach mentioned in Section II-B.
+Our data include one MRI data set and two CT data sets.
+The CT data sets are private, which includes one testing set with 360 images and  one  training  set  with  2000  images.
+All cardiac images undergo several preprocessing steps, including landmark labeling, rotation, ROI cropping, and resizing.
+The resulted images are approximately aligned with dimensions of 80 80.
+The values of WTs and cavity dimensions are normalized by the image dimension, while the areas are normalized by the pixel number  .
+During the  evaluation, the  obtained results  are  converted  to physical thickness  and area  by reversing  the resizing procedure and multiplying by the pixel spacing for each subject.
+In C, the positive and negative values indicate positive and negative correlation, respectively.
+The higher absolute value indicates a strong correlation.
+Then, we fine-tune the trained model and apply it to a different imaging modality, i.e., CT images.
+Second, to validate the ability to explore task dependencies of our adversarial reverse mapping network, we  performed the following comparison and ablation studies.
+For ablation studies, we compare the performance from two aspects that include the different network architectures and different cardiac indices that the model predicted.
+First, we establish several multitask learning frameworks over different baseline deep networks.
+These multitask learning frameworks share the same structure of pixel-level classifier, regression network, and joint representation network but have different feature extraction layers.
+Then, for different multitask learning frameworks that we established, we test their performance under different conditions: 1) the framework is trained directly on target data without parameter sharing ; the traditional one-way parameter sharing mechanism is employed ; the bidirectional parameter sharing mechanism is employed.
+Figure4 shows the segmentation results estimated by our  method  across  the  entire  cardiac  cycle  for two representative subjects from the MRI and CT data, respectively.
+Red lines in each frame represent ground-truth contours.
+Blue lines in each frame represent the automated segmentation results of our method.
+MaxFlow method first estimates segmentation, and then, it predicts the cardiac indices from segmentation.
+Unlike these methods, our framework explores the task dependencies via further learning a reverse mapping from multitype cardiac indices to images.
+This indicates that our bidirectional parameter sharing mechanism can effectively transfer the learned task dependencies from the MRI to the CT.
+For methods, even if they employ different networks, they are still trained under a one-way mapping framework from cardiac image to multitype cardiac indices regardless the learning and representation ability  of the networks.
+We also try an extended experiment,which transfers the parameters learned from the CT to the MRI.
+This study has  potential  limitations.
+Furthermore, the 3-D image-based cardiac functions, i.e., volume and ejection fraction, could not   be obtained directly.
+The proposed framework has an established reverse mapping network that explores task dependencies by learning the mapping from multitype cardiac indices to cardiac images via adversarial training.
+Experimental results show that our method not only accurately estimates multitype cardiac indices in MRI but also performs well for knowledge transfer from MRI to CT.
+Especially, the proposed method jointly optimizes  three  modules,  including a  feature  extractor, a classifier, and a domain discriminator.
+The feature extractor learns the discriminative latent features by mapping the raw EEG signals into a deep representation space.
+Therefore, we cannot simply increase the data size by aggregating the training samples from multiple subjects and feed them into the DNN models.
+Sakhavi  and  Guan fine-tuned a convolutional neural network   pretrained on the source brain signals using target samples with pseudolabels.
+Our data model learns the deep feature representation by considering the marginal and conditional distribution discrepancy between source and target domains.
+It predicts the output labels with the extracted deep features from the feature extractor.
+To our best of our knowledge, the proposed DRDA model is the first work that explores an end-to-end  DNN model with feature space adaptation for MI tasks.
+We extensively evaluate the proposed DRDA model on two real EEG data sets.
+The experimental results show that DRDA achieves state-of-the-art generalization performance in single-trial EEG-based MI tasks.
+In Section II, we mainly review the relevant studies on deep learning and domain adaptation used in MI classification.
+In  Section III, we describe the proposed model in detail.
+Finally, Section V concludes this study.
+The  conventional  common  spatial   pattern   method  and its various extensions  have achieved promising results.
+The conventional CSP employs a single fixed frequency band to compute the optimal spatial filter such that the ratio of  the  filtered  variance  between  two categories is maximized .
+However, the extracted matrix-form features are stacked into vectors and fed to a support vector machine  or  a linear discriminant analysis classifier, which would inevitably destroy the latent structural information within the raw EEG data.
+To address this issue, modern matrix-form classifiers have been  developed  to  preserve  and  leverage the structural correlation by introducing  certain  constraints on the regression  matrix.
+Zhou  and  Li   proposed a novel model to regularize the  rank  of  logistic  regression by the nuclear norm.
+Luo investigated a spectral elastic net regularization and proposed a support matrix machine model.
+Based on SMM, Zheng proposed a sparse SMM model   to simultaneously consider low-rank structural information and feature  selection, which further improved the EEG classification performance.
+Yang extracted augmented CSP features from varying frequency bands and then fed into CNN for further feature learning and classification.
+Bashivan converted the EEG time series into spectral topography images by short-time Fourier transform and then employed CNN to classify the transformed EEG images.
+In this regard, several studies explored end-to-end network models for EEG feature extraction and classification.
+Schirrmeister proposed a deep CovNet model using separated temporal and spatial  filters and achieved performance as competitive as the widely used FBCSP.
+Wang discussed different models on MI tasks with the input of signals in the frequency domain.
+She  proposed a semisupervised version of the extreme learning machine,which could utilize both labeled and unlabeled data to increase the classification accuracy.
+To address this issue, domain adaptation has been  applied  to  either  adapt the features/classifier from the source domain to the target domain or extract common features that are robust for different domains.
+Raza presented a covariate shift-detection   method and retrained the classifier once the convariate shifts were detected.
+Samek constructed an invariant subspace for CSP features by removing the principal nonstationary subspace.
+Similarly, Song developed an adaptive CSP method to classify EEG data from multisubjects, which updated the spatial filters for the target domain  during  classification.
+The classifiers for the source and target domains were adaptively trained with  a  gradient reversal  layer  unit.
+Different from those approaches that adapt the spatial filters or the established classifiers from the source domain to the target domain, we seek invariant deep representations between source and target domains with an adversarial learning process.
+In this section, we first briefly introduce the notations and definitions that are used later in this work.
+To further learn the discriminative features, we also introduce the center loss to reduce the nonstationarity in the target domain, which pushes away the features from different categories while pulling closer the features belonging to the same class.
+the combination of the feature extractor and the classifier forms an end-to-end deep learning model, which directly predicts the MI label from the EEG input.
+In what follows, we will introduce the whole process of our approach, including the preprocessing step,the end-to-end network architecture, and the loss functions.
+Namely, the feature extractor and classifier share their weights for both s and  t .
+we split the 2-D convolution into two 1-D convolution operations for EEG classification.
+This operation fuses the spatial information from different electrodes to the features of a single electrode.
+To address this issue, we consider the  conditional distribution inconsistency and utilize the labeled features from both domains to train a robust classifier.
+This module is essential in our method, which offers the ability to leverage data from other subjects in the target domain.
+Inspired by the generative adversarial network , we design the adversarial learning process with the feature extractor and domain discriminator components.
+For implementation, the discriminator is trained on a binary domain  label set	0, 1 , in which the domain label is 1 for target data and 0 for the source samples.
+The activation function is set to relu for the first three layers and sigmoid for the last layer to output a probability for binary prediction.
+The proposed method jointly optimizes the feature extractor, classifier, and domain discriminator.
+At each  iteration,  we  first  update  the parameters of the domain discriminator, fix the feature extractor and classifier, and then fix the domain discriminator and update the parameters of both the feature extractor and classifier.
+For the domain discriminator, it regards the features from source data as fake samples while those from target data as real samples.
+In this section, we extensively validate the proposed method on EEG-based MI classification in the context of BCI.
+First, we introduce two public EEG data sets used in the following experiments, Data set IIa and Data set IIb of BCI Competition IV for multiclass and binary classification, respectively.
+The data set1 contains 22-channel EEG signals from nine subjects  .
+The sampling rate of the signals is 250 Hz.
+The data were collected on four different MI tasks, including the left hand, right hand, tongue, and both feet.
+Note that the temporal segment of [2,  6] second is considered in our experiments.
+The data set2  records three bipolar-channel EEG signals from nine subjects, namely.
+The sampling rate is 250 Hz.
+For each subject, five sessions were collected.
+There are about 400 trials and 320 trials in the training and test sets, respectively.
+Our approach is implemented with the TensorFlow library in Python with an Intel Core I7 CPU and a Tesla P40 GPU.
+For these two  data sets,  all  the EEG channels are utilized for classification, and the three electrooculography   channels are directly discarded without any artifact removing operation.
+The network parameters are updated by a minibatch with a size of 64 in each training  iteration.
+We first evaluate different algorithms on data set IIa of BCI Competition IV and present the classification accuracy on each subject and mean  accuracy   values in  Table  II.
+For a clear illustration, the highest accuracy or kappa values are highlighted in boldface.
+This may result from the strong prior assumptions  of  the data.
+Similarly, SSCSP investigates the shared global subspace and removes the principal nonstationary subspace common to most subjects before CSP computation.
+These assumptions are merely held in real applications since EEG data are nonstationary and changed from subject to subject.
+We further test our method on data set IIb of BCI Competition IV.
+The domain adaption realized by adversarial learning is able to pull the data distribution from different subjects close to each other without any strong assumptions.
+Therefore, the important information of EEG data from the source domain can be exploited when training a discriminative classifier for the target domain.
+It again validates the efficacy and robustness of our method.
+We first only feed in the target data from t  to  tailor  the feature extractor and classifier to the target subject.
+Moreover, we also fine-tune the deep model  pretrained on  the source data using the target data for each subject and report the results in Table IV.
+We also investigate the influence of two adversarial losses, namely, vanilla GAN loss versus LS-GAN loss .
+We finally investigate the influence of the center loss with different weights on data set IIa of BCI Competition IV and display the performance in Table V.
+our method does not consider the intrasubject nonstationarity.
+This observation suggests that the center loss is able to handle the intraclass  variations caused by low SNR or nonstationary signals within a single subject, thus making the features learned more discriminative.
+If without the estimated target labels, the center loss would be deactivated, and our method would degrade to an unsupervised domain adaptation method.
+If the target data are also absent, the domain adaptation would be dysfunctional, and our method would further degrade to the one trained with only the annotated source data  .
+Thus, to evaluate the pseudolabel strategy in our method, we compare the performance of the pseudolabel strategy, unsupervised domain adaptation, and SourceCNN.
+A search strategy to optimize the measure over the subset space in a reasonable amount of time.
+most  machine learning algorithms is  to  approximate  this underlying distribution or estimate some of its characteristics.
+The first one is to define an appropriate measure function to assign a score to a set of features.
+Given an inducer I, wrapper approaches search through thespace of all possible feature subsets and select the one that maximizes the induction accuracy.
+Embedded approaches rank features during the training process and thus simultaneously determine both the optimal  features  and  the  parameters of the ML algorithm.
+They rely on finding an optimal feature subset through the optimization of a suitable measure function.
+Since the measure function is  selected  independently of the induction algorithm, this approach decouples the feature selection problem from the following ML algorithm.
+We will expand the mutual information function in two different series and show that most of the previously suggested information-theoretic criteria are the first or second order truncation-approximations of these expansions.
+A trivial approach is  to  exhaustively search  in  the  subset space as Greedy algorithms iteratively evaluate a candidate subset of features, then modify the subset and evaluate if the new subset is an improvement over the old one.
+This can be done in a  forward selection setup which starts with an empty set and adds one feature at a time or with a backward elimination process which starts with the full set of features and removes one feature at each step.
+However, as the number of features increases, it can rapidly become infeasible.
+Hence,many popular search approaches use greedy hill climbing, as an approximation to this NP-hard combinatorial problem.
+Most of the suggested non information-theoretic score functions are not formal set measures  .
+The following example shows this robustness.
+Unfortunately, despite the theoretical appeal of the mutual information measure, given a limited amount of data, an accurate estimate of the mutual information would be impossible.
+To overcome this problem, several heuristic corrective terms have been introduced to remove the redundant information and select mutually exclusive features.
+In the both proposed expansions X, mutual information terms  with  more  than  two  features represent higher-order interaction  properties.
+The chain rule of information leaves the choice of ordering quite flexible.
+While  adding  an  informative  but correlated feature may reduce the score value.
+Therefore, in the following sections we use as the truncated approximation.
+A very similar approach has been applied .
+In the above equation, follows the second assumption by substituting the 2nd order Kirkwood approximation inside the logarithm of the entropy integral and X is an immediate consequence of the first assumption.
+Stochastic methods like simulated annealing and genetic algorithms .
+In the following, we briefly discuss the two popular sequential search methods and continue with the proposed solution: a close to optimal polynomial-time complexity search algorithm and its evaluation on different datasets.
+The artificial binary classifier in Figure 1 may illustrate this issue.
+As a remedy, several hybrid forward-backward sequential search methods have been proposed.
+However, they  all  fail  in  one  way or another and more importantly cannot guarantee the goodness of the solution.
+To propose a new approximation method, the underlying combinatorial problem has to be studied.
+This problem can simply be transformed to a (-1,1)-quadratic programming problem.
+The following three steps summarize the approximation algorithm for.
+Ignoring the constant factor 1 in X, the equivalent homogeneous form of X can be written as: The randomized rounding step is a standard procedure to produce  a  binary  solution  from  the  real-valued solution.
+Given the solution of the problem above, i.e., y, the optimal feature subset is obtained by .
+The third step is to construct a feasible solution that satisfies the cardinality constraint.
+Generally, it can be skipped since in feature selection problems the exact satisfaction of the cardinality constraint is not required.
+Even more efficient algorithms for low-rank SDP have been suggested claiming that they can solve  problems  with  the  size  up  to  N =30000 in areasonable amount of time  .
+Here we only use the SDP-NAL for our experiments.
+Its  quality  can only be indirectly examined through the final classification performance  .
+However, the quality of a measure function is not the only contributor to the classification rate.
+Since SSP is an NP-hard problem, the search strategy can only find a local optimal solution.
+The approximation ratios of BE and COBRA can be found by linking the SSP to the k-heaviest subgraph problem   in graph theory.
+Their results are directly applicable to COBRA since both algorithms use the same randomization method   and the randomization  is  the  main  ingredient of their approximation analysis.
+The  approximation ratio of BE for k-HSP has been investigated in X is a deterministic analysis and their results are also valid for  our case.
+For all cases shown in the table except the last one, COBRA gives better guarantee bound than BE.
+However, this method obviously cannot evaluate the generalization power of the selection process on different induction algorithms.
+To evaluate the generalization strength of a feature selection algorithm, we need a goal-independent evaluation.
+Estimating P by searching over an admissible set that minimizes the classification error-rate.
+Regression Tree , Neural Network and Linear Discriminant Analysis .
+That is, COBRA generates quite diverse feature sets.
+Each box plot compares a pair of the algorithms.
+The smaller the p-value, the stronger the evidence against the null hypothesis.
+As can be seen, COBRA  shows meaningful superiority over both greedy algorithms.
+For each classifier and combination of search method and measure function, the values in parentheses is the number of selected features and the second value is the classification accuracy.
+In the next three rows, the computational times in second are shown where the first  value for COBRA and SOSS is for calculating the mutual information matrix and the second value is the time needed to solve the optimization problems.
+The yaxis is the classification accuracy difference and x-axis indicates the names of the compared algorithms.
+The first 3 rows of Table 6 report the average classification accuracies of these three algorithms and the standard deviation of these mean accuracies  .
+In the next three rows of the table, the  computational times  of each algorithm for a single run are shown, i.e., the amount of time needed to select a feature set with P features.
+Comparing the search strategies for mRMR.
+Results of the post-hoc tests for each classifier.
+computational superiority, however, seems to come at the expense of lower classification accuracy.
+An important remark to interpret these results is that, for NCI dataset   we first filtered out the features with the low mutual information values with the class label and only kept 2000 informative features.
+The generalization power of the COBRA algorithm over different classifiers is another important issue to test.
+Table 4 is used here to train other classifiers.
+Table 7 lists the accuracies obtained by using the LDA features and the optimal features, repeated from Table 4.
+A convex based parallel search strategy for feature selection, COBRA, was suggested in this work.
+Moreover, we presented two series expansions for mutual information, and showed that most mutual information based score functions in the literature including mRMR and MIFS are truncated approximations of these expansions.
+To build large-scale query-by-example image retrieval systems, embedding image features into a binary Hamming space provides great benefits.
+Most existing approaches apply a single form of hash function, and an optimization process which is typically deeply coupled to this specific form.
+The proposed framework allows a number of existing approaches to hashing to be placed in context, and simplifies the development of new problem-specific hashing methods.
+Our framework decomposes the hashing learning problem into two steps: binary codes   learning and hash function learning.
+In the past a few  years,  an  explosion  in  the  size  of the datasets has been witnessed.
+Hashing methods construct a  set of hash functions that map  the  original  features  into compact binary codes.
+Hashing enables fast nearest neighbor search by using look-up tables or Hamming  distance based ranking.
+The common forms of hash functions are linear perceptron functions ,kernel functions , eigenfunctions .
+Different  types  of  hash functions offer a trade-off between testing time and ranking accuracy.
+We decompose the learning into two steps: the  binary  codes  inference  step  and  the hash function learning step.
+In our approach, we propose an efficient graph cuts based block search algorithm for solving large-scale binary code inference problem, thus our method can be easily trained on large-scale dataset.
+Many existing hashing methods becomes impractically slow when training on large scale high-dimensional features.
+However, kernel functions could be extremely expensive for both training and testing on high-dimensional features.
+Here we propose to learn decision  trees  as  hash  functions for non-linear mapping.
+We decomposes the learning procedure into two steps: binary codes inference step and hash function learning step.
+This decomposition simplifies the hash function learning problem into a standard binary classification problem.
+For binary code inference, we propose sub-modular formulations and an efficient graph cuts method   based block search method for solving large-scale inference.
+STH   has explicitly employed a two-step learning scheme for optimizing the Laplacian affinity loss.
+Moreover, the spectral method also does not scale well on large training data.
+MLH   learns hash function by optimizing a convexconcave upper-bound of a hinge loss function  .
+They need to solve a binary code inference problem during optimization, for which they propose a so-called loss-adjusted inference algorithm.
+The training of ITQ   also involves a two-step optimization strategy.
+ITQ iteratively generates the binary code and learns a rotation matrix by minimizing the quantization error to the binary code.
+They generate the binary code simply by thresholding.
+Their  method  extends the vocabulary tree based search method by replacing the vocabulary tree as boosted trees.
+The Hamming  distance  between  two  binary  codes  is  the number of bits taking different values.
+Generally, the formulation of hashing learning is to encourage small Hamming distance for similar data pairs and large for dissimilar data pairs.
+We sequentially solve for one bit at a time conditioning on previous bits.
+We discuss training different  types  of  hash  functions  in  Sec 6.
+With the proposed efficient binary code inference, our method is not only flexible, but also capable for large-scale training.
+For each iteration, we randomly pick ne block, then optimize for the corresponding variables of this block, conditioning on the rest of the variables.
+In another word, when optimizing for one block, only those variables which correspond to the data points of the target block will be updated; and for the variables which are not involved in the target block, their values remain unchanged.
+Obviously, each block update would strictly decrease the objective.
+As loss functions always encourage two similar data points to have similar binary codes, this condition can be trivially satisfied.
+Note that the blocks can overlap and the union of them needs to cover all n variables.
+The second step is to solve a binary classification problem for learning one hash function.
+Every node of a binary decision tree is a  decision  stump.
+Training  a  stump  is  to  find a feature dimension and threshold that minimizes the weighted classification error.
+We apply the weight-trimming techniqe described in X.
+The retrieval quality is measured in 3 different aspects: the precision of top-K  retrieved examples  , mean average precision  and the area under the Precision-Recall curve .
+The dataset CIFAR10 1 contains 60, 000 images in small resolution.
+The large dataset ILSVRC2012 contains roughly 1.2 million images of 1000 categories from ImageNet.
+Following the conventional protocol in X for hashing method evaluation, a large portion of the dataset is allocated as an image database for training and retrieval and the rest is put aside for test queries.
+we  employ  K-SVD for codebook   learning with a codebook size of 800, soft-thresholding for patch encoding and spatial pooling of 3 levels, which results 11200-dimensional features.
+For further evaluation, we increase the codebook size to 1600 to generate 22400-dimensional features.
+We also extract the low-dimensional GIST features for evaluation.
+If not specifically specified, we use the following settings for our method: using the KSH loss function, the proposed block GraphCut algorithm in Step-1, and the decision tree hash function in Step-2.
+The tree depth is set to 4, and the number of boosting iterations is 200.
+For comparing methods, we follow the original papers for parameter setting.
+KSH employs a simple kernel technique by predefining a set of support vectors then learning linear weightings for each hash function.
+For our method, we use boosted decision  trees  as  hash  functions.
+KSH  is  trained  on   a sampled set of 5000 examples, and the number of support vectors for KSH is varied from 300 to 3000.
+The results are summarized in Table 1, which shows that increasing the number of support vectors consistently improves the retrieval precision of KSH.
+However, even on this small training set, including more support vectors will dramatically increase the training time and binary encoding time of KSH.
+We also show the precision curves of top-K retrieved examples in Figure 2.
+The number after "KSH" is the number of support vectors.
+We evaluate our method both on the the low-dimensional  GIST features and the high-dimensional  codebook features.
+Several state-of-the-art supervised methods are included in this compar-ison: KSH  , Supervised Self-Taught Hashing ,and Semi-supervised Hashing .
+Boosted decision tree hash functions are used in our method.
+The codebook features consistently show better result than GIST features.
+Results show that comparing methods can be efficiently trained on the GIST features.
+However, when applied on high dimensional features, even on a small training set (5000), their training time dramatically increase.
+We  run  our  FastHash  on the same sampled training set and the whole training set.
+A possible way to reduce the training cost on highdimensional data is to apply dimension reduction.
+For comparing methods: KSH, SPLH and STHs, here we reduce the original 11200-dimensional codebook features to 500 dimensions by applying PCA.
+Our FastHash still use the original high-dimensional features.
+After dimension reduction, most comparing methods can be trained on the whole training set within 24 hours.
+We use the provided training set as the database  and the validation set as test queries  .
+By using the code of Caffe which implements the CNN architecture in X, we extract 4096-dimensional features from the the seventh layer of the CNN.
+The  depth for decision trees is set to 16.
+The smallest 2% data weightings are trimmed for decision tree learning.
+For comparison, we also construct a smaller dataset by sampling 50 classes from ILSVRC2012.
+It contains 25, 000 training images and 2500 testing images.
+Since binary codes have very small storage cost or network transfer cost, image features can be compressed to binary codes by apply hashing methods.
+Here we evaluate the image classification performance of using binary codes as features on the dataset ILSVRC2012.
+We apply two types of classification methods: the K nearest neighbor   classifier and the one-vs-all linear SVM classifier.
+We also report the results of CNN methods which have the state-of-the-art results of this dataset.
+However, 128- bit binary codes in our methods take up around 1000 times less storage than the CNN features with 4096- dimensional float values.
+Conventional learning-based methods for segmenting prostate in CT images ignore the relations among the low-level features by assuming all these features are independent.
+Also, their feature selection steps usually neglect the image appearance changes in different local regions in CT images.
+To this end, we present a novel semi-automatic learning-based prostate segmentation method in this article.
+A CT scan acquired in the planning day is called the planning image, and the scans acquired in the subsequent treatment days are called the treatment images.
+This indicates the large prostate motion relative to the bones.
+In this article, we propose a novel semiautomatic learning-based prostate segmentation method for CT image guided radiotherapy.
+Previous learning-based methods   often conduct the feature selection and the subsequent prostate-likelihood estimation jointly for all voxels in the image.
+In this example, we extracted features  for  three  different  local regions, and then apply Lasso   for selection of their respective features.
+In this article, we design a novel local learning strategy: partition each 2-D slice into several nonoverlapping local blocks, and then select the respective local features to predict the prostate-likelihood for each local block.
+Also, previous methods often assume all the extracted features are independent during the prostate segmentation.
+Therefore, the independency assumption  for the features used  in  the  previous  studies  might  be  too strict.
+Note that, in our method, before automatic segmentation of prostate from the current treatment CT image, radiation oncologist needs to spend a few seconds to specify the first and last slices of prostate in the CT image.
+For segmenting the current treatment image, the patient-specific information is learned from previous planning and treatment images.
+SCOTO can successfully select the discriminative features jointly for different local regions   to guide better prostate-likelihood estimation.
+In  Section  II, we briefly introduce the related works for prostate segmentation developed in recent years.
+In Section V, we introduce the usage of coupled feature representation, and propose our new feature selection algorithm, SCOTO, for prostate-likelihood estimation.
+In Section VI, the multiatlases based label fusion for final segmentation is discussed.
+The previous methods on prostate segmentation for CT image guided radiotherapy can be roughly  categorized  into  three  classes: deformable-model-based, registration-based, and learning-based methods.
+Feng segmented the prostate by using deformable model, which integrates the gradient profile features and the probability distribution function features.
+In registration-based methods  , the planning and previous treatment images are warped onto the current treatment image, and then their respective segmentation images are similarly warped and further combined to obtain the final segmentation of the current treatment image.
+Chen designed a strategy that aligns the planning image to treatment image by meshless point set modeling and 3D non-rigid registration.
+Several experimental results have demonstrated the robustness and effectiveness of the registration-based methods for prostate segmentation.
+However, the segmentation accuracy is limited in the case with inconsistent image appearance changes in CT images.
+Shi presented a method by modeling the prostate-likelihood estimation problem as a transductive learning task.
+Secondly, for the current treatment image, radiation oncologist is asked to specify the first and last slices of the prostate.
+By combining the voxels in the specified slices of the current treatment image with the voxels sampled from the planning and previous treatment images, we can extract 2-D low-level features for all these voxels separately from their original CT images.
+For each patient, we have one planning image, several previous treatment images with their respective manual prostate segmentations by radiation oncologist offline, and also the treatment image scanned in the current  treatment  day,  which  needs  to  be  segmented  by  the proposed method.
+Detailed steps include: pelvic bone segmentation, and rigid alignment.
+For the original feature representation, three different kinds of low-level features are extracted from 2-D slice, which include 9-dimensional histogram of oriented gradient.
+We first discuss the details of our coupled feature representation, and then formulate the spatial-constrained transductive feature selection task as the proposed SCOTO.
+Thus, the low-level original features extracted from these voxels are also not independent, but related with each other in a certain way.
+However, previous learning-based prostate segmentation methods simply use the low-level original features without considering their relations.
+we consider adopting the iterative projected gradient descent method  for optimization, which separates the sub-problem into the smoothness term and the non-smoothness term, and solves them iteratively until convergence.
+The final binary prostate segmentation.
+In the experimental evaluation, we will validate the advantages of the multi-atlases based label fusion step in our whole segmentation method.
+Moreover, we will also discuss the performance under  two  particular  cases, when inaccurate manual specification happens, and when patients are with large irregular prostate motion.
+Please note that, to better distinguish the previous method using the original features and the current novel method using the coupled features, we denote the previous method as OF+SCOTO, and the current novel method as CF+SCOTO, in the following sections.
+All CT images of patients are manually segmented by an experienced radiation oncologist, which we used as ground-truth for quantitative evaluation in the following experiments.
+The CD means the Euclidean distance between the central locations of the manual segmentation result and the predicted segmentation result.
+Since prostate CT-images are 3-D, the CD along 3 directions, including   the lateral, anterior-posterior , and superior-inferior directions, need to be calculated.
+Please note that, in the superior-inferior direction, the CD is calculated as 3 times  of the obtained value since the inter-slice voxel size is 3 mm, which is approximately 3 times of that in the x-axis and y-axis.
+Both choosing too large block size and choosing too small block size are impracticable.
+Too large block size will ignore the variations of appearance along the prostate boundary, while too small block size will increase the unnecessary computational burden.
+For all these methods, the parameters are experimentally set using leaveone-out cross-validation.
+We first generate the slice-wise segmentation result for each individual slice using the corresponding slice-wise prostate-likelihood map, and then combine the slice-wise segmentation results for final prostate segmentation  .
+Fig.12 gives mean Dice ratios of all 24 patients among three strategies, which validates that the multi-atlases based label fusion outperforms the two related methods, for both the original  and coupled features.
+Fig.12 gives mean Dice ratios of all 24 patients among three strategies, which validates that the multi-atlases based label fusion outperforms the two related methods.
+The manual specification, which needs only a few seconds, can guide better prostate segmentation.
+The results obtained not on the same CT dataset are listed separately.
+Evaluated metrics include mean Dice ratio, mean ASD, and median TPF  .
+We also report the box-and-whisker diagram of Dice ratio in  Fig.17 for each individual patient.
+For statistical perspective, quartile- representation is adopted, in which five horizontal lines   mean the min, 25% percentile, median, 75% percentile, and the max value, respectively.
+we use the red curves to denote the manual segmentation results by the radiation oncologist, and the yellow curves to denote the segmentation results by the proposed methods.
+Basically, for the same patient, the start and ending slices of the prostate could change up to 10 voxel  across different treatment days even after rigid registration with pelvic bone structures.
+In this article, we have presented a novel semi-automatic learning method for prostate segmentation in CT images during the image-guided radiotherapy.
+Previous methods directly employ the low-level features without considering the relations of these features.
+Also, previous methods usually ignore the image appearance changing in different local regions of CT images during the feature selection step.
+In our method, we first ask the radiation oncologist to spend a   few seconds for the simple specification of ending slices on the current treatment image.
+These methods typically map image features to continuous or discrete  values.
+Thus, discriminative methods experience significant performance degradation when gross outliers are present.
+However, discriminative approaches often lack mathematically principled ways to incorporate priors.
+However, a single outlier in either training or testing can bias the projection because LS projects the data directly onto the subspace of T.
+That is, some robust approaches minimize a weighted regression where wi weighs the whole sample.
+We illustrate the power of RR in several computer vision tasks including head pose estimation from images, facial attribute detection with missing data and robust LDA for multi-label image classification.
+Huber introduced M-estimation for regression, providing robustness to sample outliers.
+Rousseeuw and Leroy proposed Least Trimmed Squares, which explicitly finds a data subset that minimizes the squared residual sum.
+Model parameters are updated when a new configuration produces smaller inlier error than its predecessors.
+Moreover, the aforementioned methods do not tackle intra-sample outliers, i.e., partial sample corruptions.
+Under these assumptions, orthogonal regression can minimize the Gaussian error orthogonal to the learned regression vectors.
+Moment-based methods learn the regression by estimating high-order statistics, i.e., moments, from i.i.d.
+Likelihood-based methods  learn a reliable regression when the input and response variables follow a joint, normal and identical distribution.
+Total Least Square and its nonlinear generalization solve for additive/multiple terms that enforce the correlation between the input and response variables.
+TLS-based methods relax the assumption in previous methods to allow correlated and non-identically distributed errors.
+Unfortunately, in typical computer vision applications, errors caused by occlusion, shadow and edges seldom fit such distributions.
+Although regression and classification are singlehandled by our framework, several authors have addressed solely the issue of robust classification.
+In machine learning, several authors have proposed a worst-case FDA/LDA by minimizing the upper bound of the LDA cost function to increase the separation ability between classes under unbalanced sampling.
+As in previous work on robust regression, these methods are only robust to sample-outliers.
+Fidler and Leonardis   robustify LDA for intra-sample outliers.
+In the training stage, computed PCA on the training data, replaced the minor PCA components by a robustly estimated basis, and combined the two basis into a new one.
+During testing, first estimates the coefficients of a test data on  the  recombined  basis by sub-sampling the data elements using X.
+Zhu and Martinez  proposed learning a SVM with missing data and robust to outliers.
+In X, the possible values for missing elements are modeled by a Gaussian distribution, and such that for each class, the input data with all possible missing elements spans an affine subspace.
+However,X requires the  location  of  the  outliers to be known.
+These methods model data as the sum of a low-rank clean data component with an arbitrary large and sparse outlier matrix.
+The original  form of RR,  is cumbersome to solve because the rank and cardinality operators  are discontinuous and non-convex.
+The goal is then to learn a mapping from X to labels  indicating  the  class  membership  of the data points.
+LS-LDA directly maps X to the class labels by minimizing.
+This section compares our RR methods against stateof-the-art approaches on four experiments for regression and classification.
+The first experiment uses synthetic data to compare with existing approaches and illustrate how existing robust regression methods cannot remove outliers that lie in the subspace of the data.
+The second experiment applies RR to the problem of head pose estimation from partially corrupted images.
+The third experiment reports comparisons of RR against state-of-the-art multi-label classification algorithms on the MSRC, Mediamill and TRECVID2011 databases.
+The LSR learns directly the regression matrix T using the data X.
+The other methods  re-weight the data or select a subset of the samples input data X before learning the regression.
+We randomly  select 100 samples for training and the remaining 100 data points for testing.
+Both the training and testing sets contain half of the corrupted samples.
+Fig.2 shows results obtained by TLS, where TLS only partially cleaned the corrupted data because the synthesized error cannot be modeled by an isotropic Gaussian distribution.
+Because  DRP CA is computed in an unsupervised manner, only the out- of-subspace error  can be discarded, while the in-subspace outliers can not be corrected.
+For a fair comparison, we randomly divided the 249 subjects into 5 folds and performed 5-fold crossvalidation, at each cross-validation train on 1 fold  and test on the remaining 4.
+Parameters of interest in methods (2)-(4) were selected by performing grid search over the 5-fold cross-validation.
+Table  2  summarizes  the  results  of  methods  (1)-(4)and RR.
+The LSR method produced the largest angle error with the increasing percentage of outliers.
+RPCA+LSR produced relatively larger yaw angle error.
+There are over 4000 frontal face images of 126 subjects under illumination change, expressions, and facial disguises.
+Observe that SRC produced little outliers.
+Note different to SRC, our RLDA approach used the cleaned training images D instead of the original training images X.
+We can see from Fig.5 that RLDA cleaned more intra-sample outliers and reconstruct more facial details than SRC.
+In Table 3, we compared face recognition accuracy of linear SVM, SRC and RLDA using the both the downsampled images and the Laplacian face as classification features.
+Furthermore, because the Laplacian features were not computed in the robust manner, under high corruptions , the results with Laplancian features were worse than RLDA with the downsampled images.
+This section evaluates our Robust LDA   method on two multi-label and one multi-class classification tasks: object categorization on the MSRC dataset, action recognition in the MediaMill dataset and event video indexing on the TRECVID 2011 dataset.
+We mimic   and divide each image into an grid and calculate the first and second order moments for each color channel on each grid in the RGB space.
+We followed   and eliminated classes  containing less than 1000 samples, leaving 27 classes.
+We used state of the art features obtained from Overfeat, a Convolutional Neural Network trained on ImageNet  .
+We rescaled every image to pixels and obtained  a single 4096 dimensional feature vector as the output from layer 22 of the network for every image in the dataset.
+TRECVID 2011 Dataset  4 consists of video data in MED 2010 and the development data  of MED 2011, totaling 9822 video clips belonging exclusively to one of 18 classes.
+We  first  detected  100 shots for each video and then used their center frames as keyframes.
+We described each keyframe using dense SIFT descriptors.
+From these, we learned a 4096 dimension Bag-of-Words dictionary.
+We used a 300 core cluster to extract the SIFT features, which took about 1500 CPU hours in total.
+In the experiment, we randomly split the dataset into two subsets: 3122 entries for training and 6678 for testing.
+finally, we select the class label from the class labels of k-neighbors by majority voting.
+For these reasons, we use Area Under Receiver Operating Characteristic  as our evaluation metric.
+AUROC summarizes the cost/benifit ratio over all possible classification thresholds.
+We report the average AUROC for each method under their  best parameters in Table 4.
+To test our method in a  large  scale  dataset,  we run experiments on the TRECVID2011 dataset.
+Therefore some error patterns modeled by LDA and RPCA enhanced their discriminative ability.
+Nevertheless, among all linear algorithms, our method  obtains the best average MinNDC.
+Other more accurate approximations are possible  .
+To train our facial attribute detector, we used training images from the PubFig database that have been labeled with 49 landmarks and images from Multi-PIE database that have been labeled with 68 landmark points.
+Classifiers will be trained to recognize these facial attributes from image features.
+The images in the PubFig database are taken in completely uncontrolled situations with noncooperative subjects.
+Besides the PubFig database, we also used 5683 face images from the Multi-PIE database.
+First, we used the supervised descent method to detect 49 facial landmarks in the PubFig database.
+Second, we compute a 8-dimensional Histogram of Gradient  vector around each facial point.
+As a baseline experiment, we applied the RLDA proposed in section 3.1, using only data from the PubFig database.
+At each trial of cross-validation we left one fold out for testing, and the rest three folds for training.
+We added data from MultiPIE database to conduct a"PubFig&MultiPIE" experiment.
+Finally in testing, we only used the PubFig part of "D" to clean the testing data.
+We also implemented the discriminatively trained LDA for missing data in X, a standard LDA-based approach for missing data.
+"LDA-missing" explicitly models the missing values by Gaussian distribution, whereas the missing elements in this experiment are structured.
+This paper addressed the problem of robust discriminative learning, and presented a convex formulation for RR.
+We illustrated the benefits of RR in several computer vision problems including facial attribute detection, head pose estimation, and image/video classification.
+To reduce human effort on annotating training samples, many machine learning techniques  have been studied to exploit weakly labeled training samples.
+We propose an effective approach called co-labeling to solve the multi-view weakly labeled learning problem.
+Unlike traditional co-training approaches using a single pseudo-label vector for training each classifier, our co-labeling approach explores different strategies to utilize the predictions from different views, biases and iterations for generating the pseudo-label vectors, making our approach more robust for real-world applications.
+Only the label of each bag is known, while the labels of instances in each bag remain unknown.
+Specifically, we propose a novel colabeling approach for multi-view weakly labeled learning, in which we consider two major challenges: how to effectively exchange information among different views, and how to effectively learn a robust classifier on each view.
+Moreover, considering that a single pseudolabel vector in the co-training based approach may be sensitive to the threshold, we further propose different strategies to generate multiple pseudo-label vectors by using different biases to enhance the robustness of our co-labeling approach.
+To learn the classifier for each view, traditional cotraining based methods used supervised learning approaches by treating single pseudo-label vector as the ground-truth label vector, which may be  sensitive  to  the noise in the pseudo-label vector.
+Moreover, by observing that these pseudo-label vectors are generated with different strategies, we further develop  a novel multi-layer MKL method to effectively utilize the intrinsic group structure on those base kernels.
+In Section 6, we conduct extensive experiments for different weakly labeled learning scenarios including multi-view SSL, multi-view MIL, and multi-view ROD, and also provide a detailed experimental analysis.
+Beyond our preliminary work, in this paper, we additionally propose a novel multi-layer MKL method to learn a more  robust  classifier  on  each  view.
+We  also present a theoretical analysis on our co-labeling approach.
+In Section 3, we formulate the learning problem on each view as a weakly labeled learning problem  , in which we learn an optimal classifier from a set of pseudo-label vectors and the combination of these pseudo-label vectors to the final classifier is automatically decided by the multiple kernel learning   method.
+Moreover, by observing that these pseudo-label vectors are generated with different strategies, we further develop  a novel multi-layer MKL method to effectively utilize the intrinsic group structure on those base kernels.
+In Section 6, we conduct extensive experiments for different weakly labeled learning scenarios including multi-view SSL, multi-view MIL, and multi-view ROD, and also provide a detailed experimental analysis.
+Beyond our preliminary work, in this paper, we additionally propose a novel multi-layer MKL method to learn a more  robust  classifier  on  each  view.
+We  also present a theoretical analysis on our co-labeling approach.
+Cotraining was also extended to tri-training and coforest  to handle more than two views.
+However, the co-training style algorithms work under strict assumptions that each view is sufficient to train a low-error classifier and both views are conditionally independent, which might not be satisfied on real world datasets.
+Recently, co-training with insufficient views has also been theoretically analyzed in X.
+Specifically, besides the above mentioned multi-view SSL works, SSL methods have also been widely studied for single view training data .
+Only the labels of training bags are given, while the labels of instances inside each training bag are unknown.
+Another example is maximum margin clustering , in which the goal is to learn a discriminative classifier to partition unlabeled training samples into two disjoint clusters.
+Recent work uniformly referred to the above learning scenarios as weakly labeled learning, and proposed a unified scheme called WellSVM to solve it.
+Other learning scenarios related to weakly labeled data include relative outlier detection and multi-instance semisupervised learning.
+In this section, we first review the existing works on multi-view learning and weakly labeled learning, and then present our co-labeling approach for the multi-view weakly labeled learning problem.
+The basic idea of co-training is to iteratively add some pseudo-labeled samples into the pool of labeled training samples to re-train the classifiers on both views.
+The pseudo-labeled samples are selected from the pool of unlabeled training samples, and are labeled by at least one classifier which has a confident prediction.
+We illustrate the co-training method in Fig.1.
+At each iteration, the classifier on one view generates pseudo-label vectors for learning the classifier on the other view  by using the supervised learning approach.
+For example, in SSL, one is given a limited number of labeled samples and a large amount of unlabeled samples.
+In MIL, the training data are given in the form of training bags, with each bag containing a certain number of training instances.
+Recently, the work in X studied the weakly labeled learning problem by unifying the above learning scenarios into a general learning problem with weakly labeled data.
+The label candidate set contains all the possible labelings of the training samples.
+Let us denote the label vector as label for xi and n is the number  of  training  samples.
+In MIL, the constraints are that all instances in the negative bags are negative, and at least one instance   in each positive bag is positive  .
+Let us denote I as the I-th training bag and YI as the corresponding bag label.
+The multi-class classification  problem can be converted into a set of binary classification problems using the one-versus-all strategy.
+We use the pseudo-label vector set to exchange information from the classifier trained on one view to another.
+Moreover, in the traditional co-training methods, the classifiers exchange information through a single pseudo-label vector.
+To learn a classifier on each view, the traditional co-training algorithm adopted the supervised learning method by using single pseudo-label vector as the ground-truth of unlabeled data, which may be sensitive to noise in the pseudo-label vector.
+Moreover, the learnt classifiers in the weakly labeled learning problems can be easily biased.
+A possible solution is to adjust the bias term of the learnt classifier.
+Thus far, we only consider the pseudo-label vectors obtained by using the predictions from the latest iteration, which means the pseudo-label vector set on each view can be changed at different iterations.
+Inspired by the recent weakly  labeled  learning  works, we construct the pseudo-label vector set by using the pseudo-label vectors obtained from all previous iterations.
+After generating a pseudo-label vector set for each view, the remaining problem is to learn a robust classifier using the pseudo-label vector set.
+In this section, we formulate the weakly labeled learning problem on each view as an MKL problem by combining each pseudo-label vector with the input kernel.
+In Section 5.1, we formulate the weakly labeled learning problem on each view as an norm MKL problem, in which we ignore the different ways that the pseudo-label vectors are generated.
+By putting the pseudo-label vectors generated in the same way into a group, we can organize the pseudo-label vectors into three dimensions in terms of view, bias, and iteration.
+In this section, we study a general multi-layer MKL problem and also propose an efficient solution.
+We formulate our three-layer Multiple Kernel Learning problem as follows:Different norms may introduce different levels of sparsity on the kernel combination coefficients.
+A total number of  V classifiers are trained from our co-labeling algorithm.
+The  initial  pseudo-label  vector  set  v  for  the  vth view is problem dependent.
+Note we add the new pseudo-label vectors into the set v at each iteration.
+So, in the worst case the optimal solution of MKL at the current iteration should be the same one at the previous iteration by setting the entries in the coefficient vector D corresponding to the newly added pseudo-label vectors to zeros.
+Therefore the objective values of our MKL problem on each view in X should not increase as the number of iterations increases.
+The  main  cost  in  Algorithm  3   is from the training  process  of  multi-layer  MKL.
+Note the time complexity for MKL training has not been theoretically analyzed.
+Usually, the MKL solver needs to train an SVM for a few iterations.
+The empirical analysis shows the time complexity for optimizing the QP problem in SVM is O(n2.3), where n is the number of training samples.
+We also analyze the generalization bound of our co-labeling algorithm in Appendix B.
+Specifically, we first give the generalization bound of our weakly labeled learning method on each view, and then present the generalization bound for the final classifier.
+For our co-labeling approach with multi-layer MKL, different norm parameters for different layers can represent different prior information for the corresponding layer.
+First, we iteratively update the label candidate sets.
+The labels from different iterations may be quite  different and only the labels from a limited number of iterations are close to the ground-truth labels.
+So we can better utilize multiple bias terms to enhance the robustness of the learnt classifier.
+Third, as the labels from other views may contain complementary information, we thus expect that they are equally important.
+The textual feature is extracted from the tags associated with each image, in which the vocabulary is constructed by using the top 1000 words with the highest frequency.
+Then, a 1000 dimensional termfrequency feature is extracted for each image.
+We treat each type of  feature  as  one  view,  and  use  the Gaussian kernel for each view with the bandwidth parameter as the mean of squared distances between all training samples.
+Since those works are single-view methods, we use the late fusion strategy to average the decision values from the classifiers on different views.
+For all methods, we construct 15, 20, and 25 positive bags using the top-ranked relevant images and the same number of negative bags using randomly selected irrelevant images, in which each bag contains 15 instances.
+Mean Average Precision   is the mean of the APs over all the concepts/classes.
+The mi-SVM method outperforms other baseline methods MIL-CPB, sMIL, and WellSVM, which indicates the simple approach works well on this dataset by iteratively training the SVM classifier and inferring the labels of training instances.
+We also observe that the results of all methods become higher, when the number of positive/negative training bags increases.
+We apply PMC on the concatenated feature vector from all the views.
+For all the methods except  PMC,  the  classifiers  from all views are fused with equal weights to  obtain  the final prediction in the late fusion fashion, unless stated otherwise.
+We evaluate our co-labeling approach for two-view semi-supervised learning for news classification on the BBC and BBCSport datasets  .
+The two datasets contain news articles collected from the BBC.
+For each view, we use the linear kernel for all the methods.
+We partition the datasets into the training set and the test set, each of which contains 50% of the documents per class.
+We also conduct the experiments for the single-view learning methods SVM, TSVM and WellSVM by using the original features.
+The results for SVM, TSVM and WellSVM  are  on the BBC dataset.
+We also evaluate our co-labeling approach for multi-view semi-supervised learning on the Reuters multi lingual dataset , which is from the Reuters RCV1 and RCV2 collections.
+The task is to classify the documents written in 5 languages, English, French, German, Italian and Spanish into different categories.
+The documents belonging to more than one class are annotated using the label of their smallest class.
+Each document from the corresponding corpus has been translated to the other 4 languages by using the statistical machine translation system PORTAGE.
+For each view, we use the linear kernel for all the methods.
+In this way, we can obtain a total  number of 15 views for the learning problem.
+By fully considering the group structure on all the three layers, CoL(3-layer) achieves the best results.
+Each news document is represented using the word-frequency feature and its feature dimension is 61, 188.
+In our experiments, we treat the samples from  the first 10 subcategories as the  normal  documents,  and  the samples from the remaining 10 subcategories as the outliers.
+We then construct the labeled reference set by using N normal training documents, and use another N normal training documents as unlabeled data.
+The parameters of MLOD and LSOD are set by using their leave-one-out cross validation strategies .
+From the results shown in Table 6, we have the following observations.
+To effectively utilize different types of multi-view weakly labeled data, in this paper we have studied a new problem called multi-view weakly labeled learning, which covers various weakly labeled learning problems including SSL, MIL and ROD under the multi-view setting.
+We firstly propose a co-labeling framework  to  solve  the multi-view weakly labeled learning problem using pseudo-label vectors.
+Extensive experimental results for MIL, SSL and ROD on the real-world multi-view datasets demonstrate that our proposed approach achieves state-of-the-art results.
+Coherency Sensitive Hashing   extends Locality Sensitivity Hashing   and PatchMatch to quickly find matching patches between two images.
+CSH relies on hashing to seed the initial patch matching and on image coherence to propagate good matches.
+This way, information is propagated much faster because it can use similarity in appearance space or neighborhood in the image plane.
+As a result, CSH is at least three to four times faster than PatchMatch and more accurate, especially in textured regions, where reconstruction artifacts are most noticeable to the human eye.
+In the Approximate Nearest Neighbor Fields problem, the goal is to quickly compute a mapping between the set of patches of one image to that of another, with a minimal L2 distance between the vector representations of the matching patches.
+Recently, a novel method, termed PatchMatch, proved to outperform those methods by up to two orders of magnitude, making applications that rely on ANNF run at interactive rate.
+The key to this speedup is that PatchMatch relies on the fact that images are generally coherent.
+That is, if  we  find  a  pair  of  similar  patches, in two images, then their neighbors  in  the  image  plane are also likely to be similar.
+PatchMatch uses a random search to seed the patch matches and iterates for a small  number of times to propagate good matches.
+Unfortunately, PatchMatch is not as accurate as LSH or KD-trees and increasing its accuracy requires more iterations that cost much more time.
+Specifically, information is propagated to  nearby  patches  in  the  image  plane,  as is done in PatchMatch, and to similar patches that were hashed to the same value.
+This increased speed and accuracy comes at a modest increase in memory footprint since we need to store the hashing tables.
+To measure this, we define incoherency to measure the number of neighboring patches in one image that are mapped to neighboring patches in the other image.
+The less coherent the mapping, the lower the error.
+We demonstrate the advantages of CSH over PatchMatch on a new data set of 133 image pairs  with 2 mega pixel resolution1.
+Efros and Leung introduced a simple non-parametric texture synthesis algorithm.
+Common to all these techniques  is  the  need  to  find, for each patch in  image  A,  a  similar    patch in image B, where in some  cases  images  A and  B can  be the same image.
+Wei and Levoy   proposed a Tree Structure Vector Quantization method to quickly find the necessary matches.
+Ashikhmin was the first to introduce the concept of coherency and used it to accelerate non-parametric texture synthesis.
+This was later extended to k-coherence by Tong that pre-computed a set of k nearest neighbors for each patch and used it to accelerate the search for ANN.
+They have also demonstrated it for texture synthesis.
+Two leading methods for ANN search are kd-trees   and Locality Sensitive Hashing.
+The work most closely related to ours, and indeed the one that inspired ours, is that of PatchMatch  .
+PatchMatch takes image coherence to the extreme and uses it for various image editing applications.
+Given a pair of images it randomly assigns each patch in image A to a patch in image B.
+While most assignments yield poor matches, some are quite good and these are propagated to nearby patches in the image plane.
+To avoid being trapped in a local minima, it also performs  a number of random patch assignments for each patch, keeping the best match after each stage.
+The algorithm usually converges after a small number of iterations.
+The Generalized PatchMatch   is a recent extension    of Barnes et al.
+Also, He and Sun successfully use the statistics of patch matching offsets, obtained by PatchMatch, in a graph-cut based solution for image completion.
+Efros and Leung   introduced a simple non-parametric texture synthesis algorithm.
+Common to all these techniques  is  the  need  to  find, for each patch in  image  A,  a  similar    patch in image B, where in some  cases  images  A and  B can  be the same image.
+Wei and Levoy proposed a Tree Structure Vector Quantization method to quickly find the necessary matches.
+Ashikhmin  was the first to introduce the concept of coherency and used it to accelerate non-parametric texture synthesis.
+This was later extended to k-coherence by Tong that pre-computed a set of k nearest neighbors for each patch and used it to accelerate the search for ANN.
+They have also demonstrated it for texture synthesis.
+Two leading methods for ANN search are kd-trees   and Locality Sensitive Hashing.
+The work most closely related to ours, and indeed the one that inspired ours, is that of PatchMatch  .
+PatchMatch takes image coherence to the extreme and uses it for various image editing applications.
+Given a pair of images it randomly assigns each patch in image A to a patch in image B.
+To avoid being trapped in a local minima, it also performs  a number of random patch assignments for each patch, keeping the best match after each stage.
+The algorithm usually converges after a small number of iterations.
+The Generalized PatchMatch   is a recent extension    of Barnes et al.
+Also, He and Sun successfully use the statistics of patch matching offsets, obtained by PatchMatch, in a graph-cut based solution for image completion.
+The first usage of LSH for nearest neighbor search in high dimensions worked in high dimensional binary Hamming space.
+M such primitive hash functions are concatenated to create a code which amplifies the gap between the collision probability of far away points and the collision probability of nearby points.
+Such a code creates a single hash table, by evaluating it on all data-set points.
+In the search stage, a query point is hashed into a table bin, from which the nearest of residing data-set points is chosen.
+The role of  the random offset b is to neutralize the quantization limits of fixed binning.
+Figure 2 , illustrates the spatial decomposition induced by such a function g, built of two projection lines.
+In the indexing stage, they are used in the definition of the underlying hashing functions, while in the search stage  for the efficient approximation of L2 distances between patches.
+In Sections 5.1 and 5.2, we give further implementation details.
+When designing our locality sensitive hash functions we will use a standard procedure of projecting each high dimensional point to some 1dimensional linear subspace.
+We therefore compute, a priori, a subset of WH projections of all the patches of the image.
+The straight forward way to use the LSH search scheme for image patches would have been to treat each d-by-d patch as a d2 vector in Euclidian space and the rest follows.
+We term the resulting scheme Coherency Sensitive Hashing .
+In our case, however, each vector is an image patch and we do not project it onto random lines, but rather on a fixed set of   the leading  2D Walsh Hadamard kernels.
+The motivation for this choice was given earlier in Section 4 and we now discuss the details, highlighting how this stage differs from the original one.
+Since points are vectors of pixel intensities, this translates to an approximately fixed number of bins per projection.
+The higher the frequency of the kernel, the less the projections are dispersed, but rather they concentrate around 0.
+For a certain projection its bin boundaries; In terms of X, we did the bit allocations manually , and keep them fixed for all images.
+This will guarantee better similarity of points that have the same code, but it comes  at the risk of having many  points,  whose  relevant NNs are all assigned different hash values.
+We therefore expect to have a fixed percentage of samples in each of the bins, except for the first and last ones.
+In the Indexing stage we built a set of L hash tables, with the desired property of local sensitivity in the appearance plane.
+Namely, that similar patches   are likely to be hashed to the same entry.
+The straight forward LSH search scheme would have simply implied, for each patch  in  image  A, to consider the set of patches of image B, which are hashed to the same entry in any of the L tables.
+The resulting set of potential candidates is rather small, does not exploit the known spatial arrangement of the patches and does not allow propagation of information between patches.
+Instead, CSH runs a search over L iterations,   in which it creates a rich set of candidates by combining cues of both appearance and coherence of location in a novel manner.
+LSH uses exactly the candidates of type 1.
+One clear limitation of PatchMatch, which our algorithm overcomes, is its assumption that mappings that are mostly smooth may achieve pleasing approximations.
+This approach works well on large contiguous areas that appear in both images, since a proper random guess will propagate to the whole area.
+In our approach, we intensively relate patches which collide under some hash function.
+Such collisions occur based entirely on the appearance of the pair of patches without any relation to their spatial arrangement.
+Given the candidate set all that remains is to find the nearest one.
+This step of the algorithm is actually the main overall time consumer.
+We use them here in the way Hel-Or et al.
+The idea is that accumulating the squared differences between the projections of a pair of patches on the WH kernels, one at a time, produces an increasingly tighter lower bound on the squared Euclidean distance between the patches, following Equation 3.
+This method incorporates an early termination mechanism, rejecting a candidate once  the  sum of projected differences exceeds the current nearest approximation of patch distance.
+Notice that as the patch dimension grows, we  need  a  smaller  and smaller portion of projections, enabling the ranking of candidates to be increasingly efficient.
+In this section we propose several extensions to the basic CSH scheme.
+One exception is the projection bin edge locations, which are determined by sampling the distributions of the projected patches.
+Unlike those, both the selection  of which of the WH kernels to use and the number of bits assigned to each one were determined manually in a way that is proportional to the dispersion of values in each of  the projections, averaged over many image-pair instances.
+In the indexing stage of the CSH hashing scheme the hash functions used do not depend on the images being matched.
+One exception is the projection bin edge locations, which are determined by sampling the distributions of the projected patches.
+Unlike those, both the selection  of which of the WH kernels to use and the number of bits assigned to each one were determined manually in a way that is proportional to the dispersion of values in each of  the projections, averaged over many image-pair instances.
+We first compute the variance of the patch projections on each of the WH kernels.
+Each projection is initially allocated one bin and we then iteratively allocate an extra bit to the projection, whose average variance per bin is the largest.
+We consider two alternatives to this extension, depending on the way we divide the values  into a certain number of bins.
+In the first option which we term CSH-AP the bin edges are determined in such a way that an equal number of samples fall into each bin.
+In the second option CSH-AKM  the bin edges are computed by a 1-dimensional k-means procedure , which by definition minimizes the average within-bin sample variance.
+Nearest-Neighbor methods typically support the option of retrieving the k   nearest-neighbors of a given query point .
+Such a need may arise in many applications and a good example in the scenario of patches of images is in the Non-Local-Means   denoising algorithm, where a patch is denoised using a large set of patches from its vicinity, and the contribution of a patch exponentially drops with the squared L2 distance from the source patch.
+Therefore, the general contribution is typically dominated by the several most similar patches while the contribution of the rest of the patches is negligible.
+A method for retrieving the k nearest patches would have enabled significantly accelerating the process or alternatively enabling searching in a wider vicinity of the patch.
+The Generalized PatchMatch algorithm enables such a kNN search.
+Note that in this  case the goal is to minimize the same error as in the ANN  problem, where and additional average is taken over the k retrieved neighbors.
+Then, at the search stage, we keep the k best candidates seen so far, by evicting the worst candidate from the list when a good new candidate is found.
+Many patch based methods for video enhancement extensively compute dense matches between 3-dimensional space-time patches.
+We extend CSH in this direction and experiment on computing space-time NNFs between pairs of videos.
+CSH extends naturally to incorporate the additional temporal dimension.
+The Generalized PatchMatch is an extension of PatchMatch, which enables adding rotation or even rotation and scale to the search space.
+Their approach was to handle this kind of flexibility by adding new dimensions to the basic 2-dimensional search space.
+This was the approach taken by SIFT  and other methods, which make local descriptions invariant to rotation.
+Taking rotation into consideration required several adaptations in the CSH scheme.
+The final output of the algorithm is a translation and rotation value per patch.
+The rotation value is taken to be the difference between the rotations of the two matching normalized patches.
+In this section we report on different experiments we performed to validate the algorithm and its different extensions.
+In Section 7.2 we compare the CSH hash function and its variants to other hashing codes.
+PatchMatch implementation was taken from the PatchMatch website5.
+Both algorithms were run in a single core configuration on a 2.66 GHz machine, with 8 GB of RAM.
+This is possible, since we use them in a sequential order that complies with the Gray Code ordering of these kernels.
+The first alternative hash-function, is the baseline standard LSH hash function, in which 16 random projection lines are used, each allocated a single bit.
+Note that this hash functions is totally agnostic to the input data.
+Next, several state-of-the art quantization methods which all largely exploit the specific distribution of the input vectors.
+These are Product Quantization , Iterative Quantization and the more recent Optimized Product Quantization.
+We also report results  for three variants of the CSH hash function.
+Notice in the legend the average coding times for encoding the entire set of patches of a  pair of images.
+The  main observation  is that the CSH hash function finds large amounts of low-error matching patches at a very competitive runtime.
+PatchMatch  and  CSH  differ  in  the  way  the  quality  of  a match depends on the energy level of  the  patch  .
+For each such decile of patches we calculated the mean error of the patch matches, produced by each of the algorithms.
+In Figure 10, we plot the difference between the PatchMatch error and the CSH error for each of the deciles.
+The general trend of the plot is clear and consistent across the range of patch energies.
+The maximal coherence is the patch size.
+In PatchMatch, the vast  majority  of final matches are ones that were directly propagated from neighboring patches or randomly  found  extremely  close to them.
+In CSH, different good quality matches that are spatially spread in the target image have a fair chance to be found by the algorithm.
+We demonstrate this in the most direct manner, using the reconstruction of a source image A, given a target image B and a dense patch map from A to B.
+This kind of reconstruction is the main ingredient of the patch based versions of the above mentioned applications.
+We use the code supplied with PatchMatch to calculate the image reconstruction and its quality.
+This kind of averaging was shown X to maximize the Directional Similarity from A to B.
+The RMSE error is the square root of the mean  of the squared L2 norm between original and reconstructed pixels.
+We report the averages of each of these 3 percentiles over all sample patches from all the images.
+Similarly, we experiment on computing a KNN field between a video and itself.
+This would be a common building block in many block-based methods for video editing applications, which are out of the scope of this article.
+Here again, we use the same four scaled video clips and report average and standard deviation of the computed k = 25 NNs.
+These are compared relative to ground-truth errors, which were measured on 100 random patches.
+The running was executed on the entire VidPairs dataset, at four different combinations of patch and image dimensions.
+Figure 18 summarizes the average errors for each of the four configurations, for the different modes of CSH and PatchMatch respectively.
